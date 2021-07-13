@@ -116,6 +116,60 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Footer -->
+    <footer class="container-fluid dark-orange-background">
+        <div class="row footer">
+            <div class="col-12 col-md-4">
+                <ul class="list-unstyled mb-0 flex-col-center">
+                    <li class="m-1 w-50">
+                      <a href="#!" class="text-white">Home</a>
+                    </li>
+                    <li class="m-1 w-50">
+                      <a href="#!" class="text-white">Beer</a>
+                    </li>
+                    <li class="m-1 w-50">
+                      <a href="#!" class="text-white">Merchandise</a>
+                    </li>
+                    <li class="m-1 w-50">
+                      <a href="#!" class="text-white">Find Our Beers</a>
+                    </li>
+                    <li class="m-1 w-50">
+                        <a href="#!" class="text-white">Blog</a>
+                      </li>
+                    <li class="m-1 w-50">
+                        <a href="#!" class="text-white">Contact Us</a>
+                      </li>
+                  </ul>
+            </div>
+            <!-- Social media links -->
+            <div class="col-12 col-md-4 flex-col-center">
+                <p class="footer-items">© Copyright - 12 Acres Brewing</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook aria-hidden icon"></i> <span class="sr-only">Facebook</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram aria-hidden icon"></i> <span class="sr-only">Instagram</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter aria-hidden icon"></i> <span class="sr-only">Twitter</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.reddit.com" target="_blank"><i class="fab fa-reddit aria-hidden icon"></i> <span class="sr-only">Reddit</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Newsletter sign up -->
+            <div class="col-12 col-md-4 footer-items flex-col-center">
+                <p>Sign up for our weekly newsletter</p>
+                <form id="contactForm" onsubmit="return sendMail(this);">
+                    <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control border-0" required />
+                    <button type="submit" id="send-button" aria-label="send button"><i class="far fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
     {% block postloadjs %}
     {% endblock %}
 

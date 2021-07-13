@@ -10,8 +10,19 @@ body {
     justify-content: center;
 }
 
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .light-orange-background {
     background-color: rgb(255 182 45 / 52%);
+}
+
+.dark-orange-background {
+    background-color: #f9931e;
 }
 
 .text-black {
@@ -65,4 +76,80 @@ body {
 .team-image {
     border-radius: 50%;
     width: 100%;
+}
+
+/* Footer */
+
+footer {
+    height: auto;
+    margin-bottom: 0;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.footer-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-items i {
+    font-size: 25px;
+}
+
+.footer-items form {
+    display: flex;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.footer-items button {
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+footer .row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+ul.list-inline {
+    margin: 0;
+    display: flex;
 }
