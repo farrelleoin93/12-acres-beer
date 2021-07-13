@@ -25,6 +25,10 @@ body {
     background-color: #f9931e;
 }
 
+.text-orange {
+    color: #f9931e;
+}
+
 .text-black {
     color: black !important; 
 }
