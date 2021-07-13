@@ -2,20 +2,83 @@
 {% load static %}
 
 {% block content %}
-        <div class="row no-gutters">
-            <div class="col my-auto">
-                <div class="hero-image">
-                    <div class="overlay-hero">
-                        <!-- Website description on hero image -->
-                        <div class="hero-content">
-                            <h1>12 Acres Brewing Company</h1>
-                            <p>Home of some of Ireland's most delicious beers</p>
-                            <p class="text-white">
-                                <a href="" class="btn text-white border-white">Shop</a>
-                            </p>
-                        </div>
-                    </div>
+<div class="row no-gutters">
+    <div class="col my-auto">
+        <div class="hero-image">
+            <div class="overlay-hero">
+                <!-- Website description on hero image -->
+                <div class="hero-content">
+                    <h1>12 Acres Brewing Company</h1>
+                    <p>Home of some of Ireland's most delicious beers</p>
+                    <p class="text-white">
+                        <a href="" class="btn text-white border-white">Shop</a>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<h1 class="text-center mt-3">About Us</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 order-1 mt-3">
+            <img src="{{ MEDIA_URL }}barley.jpg" class="about-us-image" alt="Barley field">
+        </div>
+        <div class="col-12 col-md-6 order-2 mt-3">
+            <div class="about-us">
+                <h3>From Our Farm</h3>
+                <p>The 12 Acres field on our farm is where we have been growing malting barley for the
+                    brewing industry for generations. Now we are craft brewing our own beer
+                    and we’ve named it after one of the fields where the barley is grown. We are
+                    also brewing with our own spring water, which originates from a source deep
+                    beneath the same land. This source is fed by the limestone aquifer of the Barrow Valley
+                    region which is known for its high quality water and produces a water chemistry ideally
+                    suited to brewing.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 order-4 order-md-3 mt-5">
+            <div class="about-us">
+                <h3>To Your Glass</h3>
+                <p>The by-products of the brewing process are the spent malting barley grains, spent hops and excess
+                    yeast. All of these by-products will be used as animal feed on our farm, resulting in zero solid
+                    waste
+                    from the brewing process and a full life-cycle of our ingredients. This ensures a sustainable
+                    environmentally-friendly process from ground to glass.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 order-3 order-md-4 mt-5">
+            <img src="{{ MEDIA_URL }}bottle-field.jpg" class="about-us-image" alt="Beer bottle ang glass">
+        </div>
+    </div>
+</div>
+<div class="light-orange-background w-100">
+<div class="container">
+    <h1 class="text-center mt-5">Our Team</h1>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 team-container">
+            <img src="{{ MEDIA_URL }}paddy.jpg" class="team-image" alt="Paddy">
+            <h4 class="font-weight-bold">Paddy</h4>
+            <p class="text-muted">Founder/Brewer</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 team-container">
+            <img src="{{ MEDIA_URL }}ian.jpg" class="team-image" alt="Ian">
+            <h4 class="font-weight-bold">Ian</h4>
+            <p class="text-muted">Founder/Brewer</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 team-container">
+            <img src="{{ MEDIA_URL }}aisling.jpg" class="team-image" alt="Aisling">
+            <h4 class="font-weight-bold">Aisling</h4>
+            <p class="text-muted">Sales/Marketing</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 team-container">
+            <img src="{{ MEDIA_URL }}john.jpg" class="team-image" alt="John">
+            <h4 class="font-weight-bold">John</h4>
+            <p class="text-muted">Dispense Solutions</p>
+        </div>
+        
+    </div>
+</div>
+</div>
 {% endblock %}
