@@ -95,6 +95,12 @@ body {
     height: 300px;
 }
 
+/* Beer and merch detail pages */
+
+.detail-image {
+    width: 80%;
+}
+
 /* Footer */
 
 footer {

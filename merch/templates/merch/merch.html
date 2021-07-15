@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="page-header text-center">Merchandise</h2>
+        </div>
+        {% for merch in merch %}
+        <div class="col-12 col-md-4 col-lg-3">
+            <div class="card h-100 border-0">
+                {% if merch.image %}
+                    <a href="{% url 'merch_detail' merch.id %}">
+                        <img class="card-img-top beer-card img-fluid" src="{{ merch.image.url }}" alt="{{ merch.name }}">
+                    </a>
+                {% else %}
+                    <a href="{% url 'merch_detail' merch.id %}">
+                        <img class="card-img-top beer-card img-fluid" src="{{ MEDIA_URL }}12-acres-logo.jpg"
+                            alt="{{ merch.name }}">
+                    </a>
+                {% endif %}
+                <div class="card-body pb-0 border-0">
+                    <p class="mb-0">{{ merch.name }}</p>
+                </div>
+                <div class="card-footer bg-white pt-0 text-left border-0">
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead mb-0 text-left font-weight-bold border-0">${{ merch.price }}</p>
+                            {% if merch.rating %}
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ merch.rating }} / 5</small>
+                            {% else %}
+                            <small class="text-muted">No Rating</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
