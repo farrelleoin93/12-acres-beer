@@ -12,11 +12,11 @@
                     <div class="card h-100 border-0">
                         {% if beer.image %}
                                 <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ beer.image.url }}" alt="{{ beer.name }}">
+                                    <img class="card-img-top beer-card img-fluid" src="{{ beer.image.url }}" alt="{{ beer.name }}">
                                 </a>
                                 {% else %}
                                 <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}12-acres-logo.jpg" alt="{{ beer.name }}">
+                                    <img class="card-img-top beer-card img-fluid" src="{{ MEDIA_URL }}12-acres-logo.jpg" alt="{{ beer.name }}">
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0 border-0">
