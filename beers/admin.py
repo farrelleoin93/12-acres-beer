@@ -20,5 +20,6 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
 admin.site.register(Beer, BeerAdmin)
 admin.site.register(Category, CategoryAdmin)
