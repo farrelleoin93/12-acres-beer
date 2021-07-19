@@ -29,6 +29,10 @@ body {
     color: #f9931e;
 }
 
+.border-orange {
+    border: 1px solid #f9931e;
+}
+
 .text-black {
     color: black !important; 
 }
