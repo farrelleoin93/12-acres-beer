@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'beers',
     'merch',
     'bag',
+    'findbeers',
 ]
 
 MIDDLEWARE = [

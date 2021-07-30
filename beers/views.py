@@ -24,4 +24,3 @@ def beer_detail(request, beer_id):
     }
 
     return render(request, 'beers/beer_detail.html', context)
-
