@@ -1,19 +1,32 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_js %}  
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ maps_api_key }}&libraries=places&callback=initMap"></script>
+    <script src="{% static 'findbeers/js/maps.js' %}"></script>
+{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h2>Find Our Beers</h2>
-            <p>Why not discover where you can try out our beers, be it in one of the many bars and establishments that stock our beers or in the comfort of your own home.</p>
-            <p class="text-white">
-                <a href="" class="btn text-black border-orange">Bars and Restaurants</a>
-            </p>
-            <p class="text-white">
-                <a href="" class="btn text-black border-orange">Offlicences</a>
-            </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2>Find Our Beers</h2>
+                <p>Why not discover where you can try out our beers, be it in one of the many bars and establishments that stock our beers or in the comfort of your own home.</p>
+                <p class="text-white">
+                    <a href="#" id="bars" class="btn text-black border-orange">Bars and Restaurants <i class="fas fa-beer"></i></a>
+                </p>
+                <p class="text-white">
+                    <a href="#" id="offlicences" class="btn text-black border-orange">Off licence <i class="fas fa-wine-bottle"></i></a>
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div id="map-container">
+                    <div id="map" class="maps"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-6"></div>
     </div>
-</div>
 {% endblock %}
+
+
+

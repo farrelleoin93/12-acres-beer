@@ -105,6 +105,13 @@ body {
     width: 80%;
 }
 
+/* Find our beers page */
+
+.maps {
+    height: 500px;
+    width: 500px;
+}
+
 /* Footer */
 
 footer {
