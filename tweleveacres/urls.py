@@ -23,7 +23,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('beers/', include('beers.urls')),
-    path('merch/', include('merch.urls')),
     path('bag/', include('bag.urls')),
     path('findbeers/', include('findbeers.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
