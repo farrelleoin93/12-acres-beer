@@ -5,17 +5,86 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="page-header text-center">{{ bag_items }}</div>
+                <h1 class="page-header text-center">Shopping Bag</h1>
             </div>
             <div class="col-12 col-md-6">
                 {% if bag_items %}
-                    <h4>Here is what's in your bag!</h4>
-                    <div class="table-responsive rounded"></div>
+                    <div class="table-responsive rounded">
+                        <table class="table table-sm table-borderless">
+                            <thead class="text-black">
+                                <tr>
+                                    <th scope="col">Product Info</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+
+                            {% for item in bag_items %}
+                                <tr>
+                                    <td class="p-3 w-25">
+                                        <img class="img-fluid rounded" src="{{ item.beer_product.image.url }}">
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"><strong>{{ item.beer_product.name }}</strong></p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">${{ item.beer_product.price }}</p>
+                                    </td>
+                                    <td class="py-3 w-25">
+                                        <p class="my-0">{{ item.quantity }}</p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">${{ item.beer_product.price }}</p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
                 {% else %}
                     <h4>Your bag is empty</h4>
                     <a href="{% url 'beers' %}" class="btn text-orange border-orange">Shop for beers</a>
                 {% endif %}
             </div>
+            {% if bag_items %}
+            <div class="col-12 col-md-6">
+                <table class="table table-sm table-borderless">
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                </p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <table">
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            <a href="{% url 'beers' %}" class="btn border-dark mt-3">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn border-orange mt-3">
+                                <span class="text-uppercase">Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

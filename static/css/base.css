@@ -3,6 +3,9 @@
 body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-center {
@@ -35,6 +38,11 @@ body {
 
 .text-black {
     color: black !important; 
+}
+
+.icon {
+    color: #2b2929;
+    font-size: 20px;
 }
 
 /* Nav */
@@ -117,6 +125,7 @@ body {
 footer {
     height: auto;
     margin-bottom: 0;
+    margin-top: auto;
 }
 
 .footer {
@@ -155,7 +164,7 @@ footer .row {
     margin-right: 15px;
 }
 
-.icon {
+.icon-footer {
     color: #fff;
     font-size: 20px;
 }
