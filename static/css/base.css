@@ -28,6 +28,7 @@ body {
     background-color: #f9931e;
 }
 
+
 .text-orange {
     color: #f9931e;
 }
@@ -107,10 +108,14 @@ body {
     height: 300px;
 }
 
-/* Beer and merch detail pages */
+/* Beer detail pages */
 
 .detail-image {
     width: 80%;
+}
+
+.form-control {
+    height: auto !important;
 }
 
 /* Find our beers page */

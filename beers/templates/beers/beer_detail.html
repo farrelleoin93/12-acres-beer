@@ -33,7 +33,25 @@
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
-                                        <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ beer.id }}" id="id_qty_{{ beer.id }}">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn border-dark" 
+                                                data-item_id="{{ beer.id }}" id="decrement-qty_{{ beer.id }}">
+                                                <span class="icon">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <input class="form-control border-dark qty_input" type="number" 
+                                        name="quantity" value="1" min="1" max="99" 
+                                        data-item_id="{{ beer.id }}" id="id_qty_{{ beer.id }}">
+                                        <div class="input-group-append">
+                                            <button class="increment-qty btn border-dark"
+                                                data-item_id="{{ beer.id }}" id="increment-qty_{{ beer.id }}">
+                                                <span class="icon">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +59,7 @@
                                 <a href="{% url 'beers' %}" class="btn mt-3 border-dark">
                                     <span>Shop More Beer</span>
                                 </a>
-                                <input type="submit" class="btn border-orange btn-black mt-3" value="Add to Bag">
+                                <input type="submit" class="btn border-orange mt-3" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -50,4 +68,9 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'beers/includes/quantity_input_script.html' %}
 {% endblock %}
