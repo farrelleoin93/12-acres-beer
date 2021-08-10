@@ -46,6 +46,10 @@ body {
     font-size: 20px;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 /* Nav */
 
 .nav-icon {
