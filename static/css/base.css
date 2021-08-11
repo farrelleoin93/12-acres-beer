@@ -216,7 +216,7 @@ footer p {
     color: #fff;
 }
 
-ul.list-inline {
+footer ul.list-inline {
     margin: 0;
     display: flex;
 }
