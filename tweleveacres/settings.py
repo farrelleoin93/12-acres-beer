@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'beers',
     'bag',
     'findbeers',
+    'checkout',
 ]
 
 MIDDLEWARE = [
