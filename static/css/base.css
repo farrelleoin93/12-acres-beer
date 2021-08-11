@@ -50,6 +50,21 @@ body {
     cursor: pointer;
 }
 
+.message-container {
+    position: fixed;
+    right: 10px;
+    z-index: 99;
+    top: 100px;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-border-bottom {
+    height: 2px;
+}
+
 /* Nav */
 
 .nav-icon {
