@@ -28,7 +28,6 @@ body {
     background-color: #f9931e;
 }
 
-
 .text-orange {
     color: #f9931e;
 }
@@ -44,6 +43,14 @@ body {
 .icon {
     color: #2b2929;
     font-size: 20px;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
 }
 
 .cursor {
@@ -143,6 +150,55 @@ body {
 .maps {
     height: 500px;
     width: 500px;
+}
+
+/* Allauth */
+
+.allauth-form-inner-content p {
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 4px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f9931e;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	transform: scale(1.02);
+}
+
+.allauth-form-inner-content a {
+	color: #f9931e; /* text-info */
 }
 
 /* Footer */
