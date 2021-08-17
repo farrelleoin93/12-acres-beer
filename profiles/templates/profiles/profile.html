@@ -9,11 +9,36 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <h1 class="logo-font mb-4 text-center">My Profile</h1>
+                <div class="flex-center">
+                    <a href="#details" class="btn border-dark">
+                        <span>Your Details</span>
+                    </a>
+                    <a href="#orders" class="btn ml-1 border-dark">
+                        <span>Your Orders</span>
+                    </a>
+                </div>
+            </div>
+            <div id="details" class="col-sm-12 col-md-8 offset-md-2">
+                <form class="my-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="flex-center">
+                        <button class="btn border-dark">Update Details</button>
+                    </div>
+                </form>
+            </div>
+            <div id="orders" class="col-sm-12 col-md-8 offset-md-2">
+                {{ orders }}
             </div>
         </div>
-
+    
     </div>
     {{ profile }}
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}

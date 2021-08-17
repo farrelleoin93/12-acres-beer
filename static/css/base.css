@@ -49,6 +49,10 @@ body {
     transform: scale(1.02);
 }
 
+.btn:active {
+    transform: scale(1.02);
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -74,6 +78,10 @@ input[name='q']::placeholder {
 
 
 /* Nav */
+
+#main-nav p {
+    margin-bottom: 0;
+}
 
 .nav-icon {
     font-size: 19px;
