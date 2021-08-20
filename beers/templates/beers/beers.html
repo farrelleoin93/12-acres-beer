@@ -23,7 +23,7 @@
         </div>
         {% for beer in beers %}
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="card h-100 border-0">
+            <div class="card h-100">
                 {% if beer.image %}
                     <a href="{% url 'beer_detail' beer.id %}">
                         <img class="card-img-top beer-card img-fluid" src="{{ beer.image.url }}" alt="{{ beer.name }}">
@@ -34,13 +34,13 @@
                             alt="{{ beer.name }}">
                     </a>
                 {% endif %}
-                <div class="card-body pb-0 border-0">
+                <div class="card-body pb-0">
                     <p class="mb-0">{{ beer.name }}</p>
                 </div>
-                <div class="card-footer bg-white pt-0 text-left border-0">
+                <div class="card-footer bg-white pt-0 text-left">
                     <div class="row">
                         <div class="col">
-                            <p class="lead mb-0 text-left font-weight-bold border-0">${{ beer.price }}</p>
+                            <p class="lead mb-0 text-left font-weight-bold">${{ beer.price }}</p>
                             {% if beer.rating %}
                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ beer.rating }} / 5</small>
                             {% else %}
