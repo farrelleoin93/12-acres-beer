@@ -22,10 +22,12 @@ def beers(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse('beers'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             beers = beers.filter(queries)
 
     context = {
@@ -50,8 +52,17 @@ def beer_detail(request, beer_id):
 
 
 def add_beer(request):
-    """ Add a product to the store """
-    form = BeerForm()
+    if request.method == 'POST':
+        form = BeerForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added beer!')
+            return redirect(reverse('add_beer'))
+        else:
+            messages.error(request, 'Failed to add beer. Please ensure the form is valid.')
+    else:
+        form = BeerForm()
+
     template = 'beers/add_beer.html'
     context = {
         'form': form,
