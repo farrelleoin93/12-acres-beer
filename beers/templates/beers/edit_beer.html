@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4 text-center">Edit Beer</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <form method="POST" action="{% url 'edit_beer' beer.id %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-center mb-3">
+                        <a class="btn border-dark" href="{% url 'beers' %}">Cancel</a>
+                        <button class="btn border-orange" type="submit">Update Beer</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}

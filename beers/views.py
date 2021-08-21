@@ -69,3 +69,27 @@ def add_beer(request):
     }
 
     return render(request, template, context)
+
+
+def edit_beer(request, beer_id):
+    """ Edit a beer in the store """
+    beer = get_object_or_404(Beer, pk=beer_id)
+    if request.method == 'POST':
+        form = BeerForm(request.POST, request.FILES, instance=beer)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated beer!')
+            return redirect(reverse('beer_detail', args=[beer.id]))
+        else:
+            messages.error(request, 'Failed to update beer. Please ensure the form is valid.')
+    else:
+        form = BeerForm(instance=beer)
+        messages.info(request, f'You are editing {beer.name}')
+
+    template = 'beers/edit_beer.html'
+    context = {
+        'form': form,
+        'beer': beer,
+    }
+
+    return render(request, template, context)
