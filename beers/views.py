@@ -55,9 +55,9 @@ def add_beer(request):
     if request.method == 'POST':
         form = BeerForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            beer = form.save()
             messages.success(request, 'Successfully added beer!')
-            return redirect(reverse('add_beer'))
+            return redirect(reverse('beer_detail', args=[beer.id]))
         else:
             messages.error(request, 'Failed to add beer. Please ensure the form is valid.')
     else:
@@ -93,3 +93,11 @@ def edit_beer(request, beer_id):
     }
 
     return render(request, template, context)
+
+
+def delete_beer(request, beer_id):
+    """ Delete a beer """
+    beer = get_object_or_404(Beer, pk=beer_id)
+    beer.delete()
+    messages.success(request, 'Beer deleted!')
+    return redirect(reverse('beers'))
