@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+
 from .models import Beer, Category
+from .forms import BeerForm
 
 
 def beers(request):
@@ -45,3 +47,14 @@ def beer_detail(request, beer_id):
     }
 
     return render(request, 'beers/beer_detail.html', context)
+
+
+def add_beer(request):
+    """ Add a product to the store """
+    form = BeerForm()
+    template = 'beers/add_beer.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
