@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">{{ post.title }}</h2>
+            </div>
+            <div class="col-12 col-md-8 offset-md-2 mb-2">
+                {% if blog.image %}
+                    <a href="{{ post.image.url }}" target="_blank" class="flex-center">
+                        <img class="card-img-top blog-detail-image" src="{{ post.image.url }}" alt="{{ post.title }}">
+                    </a>
+                {% else %}
+                        <img class="card-img-top blog-detail-image" src="{{ MEDIA_URL }}3-bottles.jpg"
+                            alt="{{ post.title }}">
+                {% endif %}
+            </div>
+            <div class="col-12 col-md-8 offset-md-2 mb-2">
+                <p>{{ post.content }}</p>
+                <p class="text-muted">{{ post.author }}</p>
+                <p class="text-muted">{{ post.date_added }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

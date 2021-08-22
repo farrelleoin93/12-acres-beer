@@ -172,6 +172,14 @@ input[name='q']::placeholder {
     object-fit: cover;
 }
 
+/* Blog details pages */
+
+.blog-detail-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
 /* Allauth */
 
 .allauth-form-inner-content p {

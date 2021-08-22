@@ -21,13 +21,14 @@ def blog(request):
 def blog_detail(request, slug):
     """ A view to show blog details """
 
-    blog = get_object_or_404(Post, slug=slug)
+    post = get_object_or_404(Post, slug=slug)
 
+    template = 'blog/blog_detail.html'
     context = {
-        'blog': blog,
+        'post': post,
     }
 
-    return render(request, 'blog/blog_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
