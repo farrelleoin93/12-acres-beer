@@ -164,6 +164,14 @@ input[name='q']::placeholder {
     width: 500px;
 }
 
+/* Find our beers page */
+
+.blog-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Allauth */
 
 .allauth-form-inner-content p {

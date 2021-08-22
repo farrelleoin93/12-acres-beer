@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="page-header text-center">Blogs</h2>
+        </div>
+        {% for post in posts %}
+        <div class="col-12">
+            <div class="card text-center mt-3 mb-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 order-2 order-md-1  d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.author }}</p>
+                            <a href="#" class="btn dark-orange-background text-white"> Read Blog </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 order-1 order-md-2">
+                        {% if post.image %}
+                            <img class="blog-card-image" src="{{ post.image.url }}"
+                                alt="{{ post.title }}">
+                        {% else %}
+                            <img class="blog-card-image" src="{{ MEDIA_URL }}12-acres-logo.jpg"
+                                alt="{{ post.title }}">
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="card-footer text-muted">
+                    {{ post.date_added }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

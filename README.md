@@ -1,102 +1,288 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+You can see the live website [here]().
 
-Welcome farrelleoin93,
+![Responsiveness]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+**To open any links in this document in a new tab press `CTRL + Click`.**
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+# UX
+## Contents
 
 ---
 
-Happy coding!
+- [UX](#ux)
+  - [User Stories](#user-stories)
+  - [Site Owner Goals](#goals)
+  - [User Requirements and Expectations](#user-requirements)
+  - [Design Choices](#design-choices)
+    - Fonts
+    - Icons
+    - Colours
+- [Database Model](#database-model)
+- [Wireframes](#wireframes)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+
+## <a name="ux">UX</a>
+
+---
+
+### <a name="user-stories">User Stories</a>
+
+|      As a/an...      |                         I want the ability to...                         |                        So that I can...                       |
+|:--------------------:|:------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+|                      |                                                                          |                                                               |
+|          ---         |                                    ---                                   |                              ---                              |
+| Unregistered user       | easily navigate the site                                                | find what I am looking for quickly                            |
+| Unregistered user       | search for beers                                                     | quickly find beers that I am intrested in        |
+| Unregistered user       | filter beers                                                | find specific types of beer                         |
+| Unregistered user       | read details about each beer                                             | see if it is the type of beer that I want      |
+| Unregistered user       | see what pubs and shops sell the beers              | have another way to buy them other than the website         |
+| Unregistered user       | access contact details                                                  | get in touch with any questions                               |
+| Unregistered user       | easily register an account                                      | use the site easier in the future                 |
+|          ---         |                                    ---                                   |                              ---                              |
+| Registered user      | log in and log out of my profile account                                | so that my personal information will be safe        |
+| Registered user      | store my details for later use                                          | avoid having to fill in my details each time        |
+| Registered user      | update my details                                                        | update address and other details in case they change          |
+| Registered user      | store my order history                                               | access my previous orders                         |
+| Registered user      | leave a review                                               | inform future users about the beer                         |
+| Registered user      | review my purchase at the checkout                                  | decide whether to add or edit order before confirming     |
+| Registered user      | Make secure payments                                                     | ensure my payments are securely handled                       |
+| Registered user      | Receive email confirmation of my payment                        | confirm that my payment was made |
+|          ---         |                                    ---                                   |                              ---                              |
+| Site admin/superuser | add new beers to the website                                  | continuously make new beers available          |
+| Site admin/superuser | update project listings                                                 | update new info from projects                                 |
+| Site admin/superuser | delete existing project listings                                        | delete projects that may cease to exist                       |
+| Site admin/superuser | create blogs                                                            | inform users about any developments at the company                          |
+| Site admin/superuser | update blog entries                                                     | update users on any developments at the company                      |
+| Site admin/superuser | delete blog entries                                                     | remove blog details           |
+|                      |                                                                          |                                                               |
+
+
+
+
+## <a name="user-requirements">User Requirements and Expectations</a>
+
+---
+
+- The user should be presented with a visually appealing website.
+- The user should be able to clearly navigate through the website even on their first visit.
+- The user should be able to read about each beer so that they can decide what beers are right for them.
+- The user should be able search for a specific beer or filter the beer by a category.
+- The user should be able to to find out informatiion about the comany via blog posts.
+- The user should be able to register for the website.
+- The user should be able to buy beers easily and securely. 
+- The user should be able to safe their details to their profile and should also have the ability to edit them.
+- The user should be able to contact the owners of the company.
+
+
+## <a name="design-choices">Design Choices</a>
+
+---
+
+### Fonts
+- 
+
+
+### Colours
+- 
+
+### Icons
+- The icons that I used in this project were provided by [Font Awesome](https://fontawesome.com/). I decided to use icons as they offer a pleasant visual aide to the site, also users tend to know that icons usually work as buttons.
+
+## <a name="database-model">Database Model</a>
+
+
+## <a name="wireframes">Wireframes</a>
+
+---
+
+The wireframes for this website can be found at the following links:
+
+
+#### Changes to Wireframes
+
+## <a name="features">Features</a>
+
+---
+**The main features of this website are:**
+- an attractive design.
+- a navigation bar that the user understands how to use even on their first visit to the website and that brings them to the appropriate part of the website.
+- 
+
+**Features that will be added in the future are:**
+- an option to add videos of how to grow seeds.
+- a comment section so people can provide some extra tips on how to grow seeds.
+
+## <a name="technologies">Technologies</a>
+
+---
+
+### Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS3)
+- [JavaScript](https://en.wikipedia.org/wiki/javascript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Other
+
+1. [Tiny PNG](https://tinypng.com/)
+   - This was used to compress the size of the hero image and the default card image.
+2. [Font Awesome](https://fontawesome.com/)
+   - The icons used were found at Font Awesome.
+3. [Ucraft](https://www.ucraft.com/free-logo-maker)
+   - Ucraft was used to make the logo for the favicon.
+4. [Bootstrap](https://getbootstrap.com/)
+   - Bootstrap was used throughout this website.
+5. [jQuery](https://jquery.com/)
+   - jQuery was used for initializing the Materialize features.
+7. [Google Fonts](https://fonts.google.com/)
+   - The fonts used for this website were found at Google Fonts.
+8. [Balsamiq](https://balsamiq.com/)
+   - The wireframes were made using Balsamiq.
+9. [Github](https://github.com/)
+   - This project was stored on Github.
+10. [Gitpod](https://www.gitpod.io/)
+    - Gitpod was used to write the code used for this website.
+11. [Git](https://en.wikipedia.org/wiki/Git)
+    - The version control system used for this project was Git.
+12. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+    - Chrome DevTools was used throughout the building of this website.
+13. [WebFormatter](https://webformatter.com/html) 
+    - WebFormatter was used to format the html and css files.
+14. [Am I Responsive](http://ami.responsivedesign.is/) 
+    - Am I Responsive was used to see how the website looked on different devices.
+16. [Unsplash](https://unsplash.com/)
+    - Unsplash was used to get images to use for the website.
+17. [Pexels](https://www.pexels.com/)
+    - Pexels was used to get images to use for the website.
+18. [Emailjs](https://www.emailjs.com/)
+    - Emailjs was used so that the user can sign up for the newsletter.
+20. [JSHint](https://jshint.com/)
+    - JSHint was used to test the JavaScript code.
+21. [Python Tester](https://extendsclass.com/python-tester.html)
+    - Used to test python code.
+22. [Heroku](https://id.heroku.com/login)
+    - Heroku was used to deploy this website
+
+
+### Resources
+The following websites were used as learning resources throughout the building of this project:
+- [Code Institute](https://codeinstitute.net/)
+- [Slack - Code Institutes Community](https://slack.com/intl/en-ie/)
+- [w3schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [YouTube](https://www.youtube.com/)
+- [CSS-Tricks](https://css-tricks.com/)
+- [Markdown](https://commonmark.org/help/)
+
+## <a name="testing">Testing</a>
+
+---
+The details of testing can be found [here](TESTING.md).
+
+## <a name="deployment">Deployment</a>
+
+---
+## Deployment
+
+The master branch of this repository is the most up to date version and has been used for the deployed version of the site.
+
+
+### How to clone the project
+
+To clone this project from its [GitHub repository](https://github.com/farrelleoin93/milestone-3-seed-shelf):
+
+1. From the repository, click "Code"
+2. In the "Clone >> HTTPS" section, copy the clone URL for the repository
+3. Type `git clone` into your teminal and paste the URL you copied.
+
+```
+git clone <paste url>.
+```
+
+```
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "SECRET KEY")
+os.environ.setdefault("MONGO_URI", "MONGO URI")
+os.environ.setdefault("MONGO_DBNAME", "MONGO DBNAME")
+
+```
+8. **List env.py in your .gitignore file so that your variables are not pushed publicly.**
+9. The app can now be run locally using
+```
+python3 app.py
+```
+
+
+### How to deploy to Heroku
+
+To deploy the app to Heroku from its [GitHub repository](https://github.com/farrelleoin93/milestone-3-seed-shelf), I took the following steps:
+
+1. Create "requirements.txt" and "Procfile" using the following commands:
+
+```
+pip3 freeze --local > requirements.txt
+echo web: python app.py > Procfile
+```
+
+2. "Push" these files to GitHub.
+3. "Log In" to [Heroku](https://id.heroku.com/login).
+4. Select "Create new app" from the dropdown in the Heroku dashboard.
+5. Choose a unique name ('the-seed-shelf') for the app pick whatever location is closest to you.
+6. Click the "Deploy" tab and under "Deployment method" pick GitHub.
+7. In "Connect to GitHub" enter your GitHub repository details and click "Connect".
+8. Go to the "Settings" tab and under "Config Vars" select "Reveal Config Vars".
+9. Enter the following keys and values, these must match the keys and values in your env.py file:
+
+|**Key**|**Value**|
+|:-----|:-----|
+|IP|`0.0.0.0`|
+|PORT|`5000`|
+
+
+10. Go to the "Deploy" tab again and under "Automatic deploys" select "Enable Automatic Deploys".
+11. Under "Manual deploy", select "master" and click "Deploy Branch".
+12. On the top right of the page click "Open app".
+
+
+
+## <a name="credits">Credits</a>
+
+---
+
+### Credits for Fonts
+
+- [Google Fonts](https://fonts.google.com)
+- [Font Pair](https://fontpair.co/)
+
+### Media
+
+- All images used on this website were found on [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/).
+
+### Code 
+
+
+
+### Content
+
+- 
+## <a name="acknowledgements">Acknowledgements</a>
+
+- I would like to thank mentor Akshat Garg for all his invaluable advice during my three mentor sessions.
+- I would also like to thank the turors at Code Institute, in particular ....
+for their help during this project.
+- I would also like to thank thank Megan Lee, Kate Farrell, and Claire Shortall for testing my project and providing me with some feedback.
+
+
+## <a name="contact">Contact</a>
+If you have any questions regarding this project feel free to contact me at farrelleoin93@gmail.com.
