@@ -40,4 +40,3 @@ def add_blog(request):
     }
 
     return render(request, template, context)
-
