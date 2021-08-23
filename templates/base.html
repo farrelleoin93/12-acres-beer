@@ -71,7 +71,8 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_beer' %}" class="dropdown-item">Product Management</a>
+                                <a href="{% url 'add_beer' %}" class="dropdown-item">Add Beer</a>
+                                <a href="{% url 'add_blog' %}" class="dropdown-item">Add Blog</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -137,7 +138,8 @@
                       <div class="dropdown-menu border-0" aria-labelledby="user-options">
                           {% if request.user.is_authenticated %}
                               {% if request.user.is_superuser %}
-                                  <a href="{% url 'add_beer' %}" class="dropdown-item">Product Management</a>
+                                  <a href="{% url 'add_beer' %}" class="dropdown-item">Add Beer</a>
+                                  <a href="{% url 'add_blog' %}" class="dropdown-item">Add Blog</a>
                               {% endif %}
                               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
