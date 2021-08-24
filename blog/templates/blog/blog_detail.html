@@ -5,22 +5,28 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center">{{ post.title }}</h2>
+                <h2 class="text-center">{{ blog_detail.title }}</h2>
             </div>
             <div class="col-12 col-md-8 offset-md-2 mb-2">
                 {% if blog.image %}
-                    <a href="{{ post.image.url }}" target="_blank" class="flex-center">
-                        <img class="card-img-top blog-detail-image" src="{{ post.image.url }}" alt="{{ post.title }}">
+                    <a href="{{ blog_detail.image.url }}" target="_blank" class="flex-center">
+                        <img class="card-img-top blog-detail-image" src="{{ blog_detail.image.url }}" alt="{{ post.title }}">
                     </a>
                 {% else %}
                         <img class="card-img-top blog-detail-image" src="{{ MEDIA_URL }}3-bottles.jpg"
-                            alt="{{ post.title }}">
+                            alt="{{ blog_detail.title }}">
                 {% endif %}
             </div>
             <div class="col-12 col-md-8 offset-md-2 mb-2">
-                <p>{{ post.content }}</p>
-                <p class="text-muted">{{ post.author }}</p>
-                <p class="text-muted">{{ post.date_added }}</p>
+                <p>{{ blog_detail.content }}</p>
+                <p class="text-muted">{{ blog_detail.author }}</p>
+                <p class="text-muted">{{ blog_detail.date_added }}</p>
+                {% if request.user.is_superuser %}
+                        <div>
+                            <a class="beer-detail-icon" href="{% url 'edit_blog' blog_detail.slug %}"><i class="fas fa-edit"></i></a>
+                            <a class="beer-detail-icon text-danger" href="{% url 'delete_blog' blog_detail.slug %}"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    {% endif %}
             </div>
         </div>
     </div>
