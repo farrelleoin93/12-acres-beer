@@ -138,6 +138,7 @@ input[name='q']::placeholder {
 .team-image {
     border-radius: 50%;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 /* Beer */
@@ -155,6 +156,10 @@ input[name='q']::placeholder {
 
 .form-control {
     height: auto !important;
+}
+
+.beer-stars {
+    color: gold;
 }
 
 /* Find our beers page */
@@ -226,7 +231,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #f9931e; /* text-info */
+	color: #f9931e; 
 }
 
 /* Product Form */
