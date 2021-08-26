@@ -232,27 +232,22 @@
     <!-- Footer -->
     <footer class="container-fluid dark-orange-background">
         <div class="row footer">
-            <div class="col-12 col-md-4">
-                <ul class="list-unstyled mb-0 flex-col-center">
-                    <li class="m-1 w-50">
-                      <a href="#!" class="text-white">Home</a>
-                    </li>
-                    <li class="m-1 w-50">
-                      <a href="#!" class="text-white">Beer</a>
-                    </li>
-                    <li class="m-1 w-50">
-                      <a href="#!" class="text-white">Find Our Beers</a>
-                    </li>
-                    <li class="m-1 w-50">
-                        <a href="#!" class="text-white">Blog</a>
-                      </li>
-                    <li class="m-1 w-50">
-                        <a href="#!" class="text-white">Contact Us</a>
-                      </li>
-                  </ul>
+            <div class="col-sm-12 col-md-6">
+                <p><strong>12 Acres Brewing Company</strong></p>
+                <p><i class="fas fa-map-marker-alt"></i> Clonmore, Killeshin, Co. Laois, R93 X3X8, Ireland</p>
+                <p><i class="fas fa-phone"></i> 1234567890</p>
+                <p><i class="fas fa-envelope-open-text"></i> 12acres@example.com</p>
+            </div>
+             <!-- Newsletter sign up -->
+             <div class="col-sm-12 col-md-6 footer-items flex-col-center">
+                <p>Sign up for our weekly newsletter</p>
+                <form id="contactForm" class="w-100" onsubmit="return sendMail(this);">
+                    <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control border-0" required />
+                    <button type="submit" id="send-button" aria-label="send button"><i class="far fa-paper-plane"></i></button>
+                </form>
             </div>
             <!-- Social media links -->
-            <div class="col-12 col-md-4 flex-col-center">
+            <div class="col-sm-12 flex-col-center">
                 <p class="footer-items">© Copyright - 12 Acres Brewing</p>
                 <ul class="list-inline">
                     <li class="list-inline-item">
@@ -268,14 +263,6 @@
                         <a href="https://www.reddit.com" target="_blank"><i class="fab fa-reddit aria-hidden icon-footer"></i> <span class="sr-only">Reddit</span></a>
                     </li>
                 </ul>
-            </div>
-            <!-- Newsletter sign up -->
-            <div class="col-12 col-md-4 footer-items flex-col-center">
-                <p>Sign up for our weekly newsletter</p>
-                <form id="contactForm" onsubmit="return sendMail(this);">
-                    <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control border-0" required />
-                    <button type="submit" id="send-button" aria-label="send button"><i class="far fa-paper-plane"></i></button>
-                </form>
             </div>
         </div>
     </footer>
