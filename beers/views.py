@@ -203,3 +203,23 @@ def edit_review(request, review_id):
     }
 
     return render(request, template, context)
+
+
+def delete_review(request, review_id):
+    """
+    Allows superuser to delete a users review.
+    """
+
+    if not request.user.is_superuser:
+        messages.error(
+            request,
+            "Sorry, you don't have the necessary permissions to do that.")
+        return redirect(reverse('home'))
+
+    review = get_object_or_404(BeerReview, pk=review_id)
+    beer = review.beer
+    reviewer = review.user
+    review.delete()
+    messages.info(request, f"Successfully deleted {reviewer}'s review")
+
+    return redirect(reverse('beer_detail', args=[beer.id]))
