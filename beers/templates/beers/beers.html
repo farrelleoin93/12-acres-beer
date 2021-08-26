@@ -28,8 +28,8 @@
         </div>
         {% endif %}
         {% for beer in beers %}
-        <div class="col-12 col-md-4 col-lg-3">
-            <div class="card h-100 border-0">
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <div class="card card-shadow h-100 border-0">
                 {% if beer.image %}
                     <a href="{% url 'beer_detail' beer.id %}">
                         <img class="card-img-top beer-card img-fluid" src="{{ beer.image.url }}" alt="{{ beer.name }}">
