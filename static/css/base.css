@@ -170,7 +170,7 @@ input[name='q']::placeholder {
 
 .maps {
     height: 500px;
-    width: 500px;
+    width: 100%;
 }
 
 /* Find our beers page */
