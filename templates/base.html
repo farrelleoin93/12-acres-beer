@@ -105,9 +105,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Mobile Top Header -->
-                <ul>
+                <ul class="mb-0">
                     <li class="list-inline-item">
-                      <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="text-white nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
                               <div><i class="fas fa-search fa-lg"></i></div>
                               <p class="my-0">Search</p>
@@ -129,7 +129,7 @@
                       </div>
                   </li>
                   <li class="list-inline-item dropdown">
-                      <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="text-white nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
                               <div><i class="fas fa-user fa-lg"></i></div>
                               <p class="my-0">My Account</p>
@@ -150,7 +150,7 @@
                       </div>
                   </li>
                   <li class="list-inline-item">
-                      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+                      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
                           <div class="text-center">
                               <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                               <p class="my-0">
@@ -241,8 +241,9 @@
              <!-- Newsletter sign up -->
              <div class="col-sm-12 col-md-6 footer-items flex-col-center">
                 <p>Sign up for our weekly newsletter</p>
-                <form id="contactForm" class="w-100" onsubmit="return sendMail(this);">
-                    <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control border-0" required />
+                <form id="newsletterForm" class="w-sm-100 w-md-75" action="{% url 'home' %}" method="POST">
+                    {% csrf_token %}
+                    {{ newsletter_form|crispy }}
                     <button type="submit" id="send-button" aria-label="send button"><i class="far fa-paper-plane"></i></button>
                 </form>
             </div>

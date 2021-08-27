@@ -1,4 +1,5 @@
 from django import forms
+from .models import Newsletter
 
 
 class ContactForm(forms.Form):
@@ -24,3 +25,9 @@ class ContactForm(forms.Form):
             placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
+
+
+class NewsletterForm(forms.ModelForm):
+    class Meta:
+        model = Newsletter
+        fields = ["email_address"]
