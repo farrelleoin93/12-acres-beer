@@ -296,14 +296,6 @@ footer {
     font-size: 25px;
 }
 
-.footer-items form {
-    display: flex;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 0 20px;
-    margin-bottom: 10px;
-}
-
 .footer-items button {
     border: none;
     background-color: #fff;

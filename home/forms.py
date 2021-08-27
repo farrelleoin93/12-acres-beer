@@ -31,3 +31,14 @@ class NewsletterForm(forms.ModelForm):
     class Meta:
         model = Newsletter
         fields = ["email_address"]
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'email_address': 'Email Address',
+        }
+
+        for field in self.fields:
+            placeholder = placeholders[field]
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].label = False
