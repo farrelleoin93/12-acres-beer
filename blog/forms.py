@@ -6,7 +6,7 @@ from .models import Post
 class BlogForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = '__all__'
+        exclude = ('slug', 'author')
 
     image = forms.ImageField(
         label='Image', required=False,
