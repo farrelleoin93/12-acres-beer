@@ -173,6 +173,12 @@ input[name='q']::placeholder {
     width: 100%;
 }
 
+/* Blog details pages */
+
+#orders {
+    display: none;
+}
+
 /* Find our beers page */
 
 .blog-card-image {
