@@ -131,26 +131,6 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript" src="{% static 'beers/js/show-stars.js' %}"></script>
 {% include 'beers/includes/quantity_input_script.html' %}
-
-<script>
-    const beerStars = document.querySelectorAll('.beer-stars');
-
-beerStars.forEach(rating => {
-    const ratingValue = parseInt(rating.dataset.value);
-    const fullStar = ratingValue;
-    let stars = '';
-
-    for (let i = 1; i < 6; i++) {
-        if (i <= fullStar) {
-            stars += `<i class="fas fa-star"></i>`;
-        } else {
-            stars += `<i class="far fa-star"></i>`;
-        }
-    }
-
-    rating.innerHTML = stars;
-});
-</script>
-
 {% endblock %}
