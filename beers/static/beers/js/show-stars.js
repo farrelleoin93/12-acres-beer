@@ -14,4 +14,5 @@ beerStars.forEach(rating => {
     }
 
     rating.innerHTML = stars;
+    console.log(rating)
 });
