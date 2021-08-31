@@ -71,7 +71,9 @@ def add_beer(request):
             messages.success(request, 'Successfully added beer!')
             return redirect(reverse('beer_detail', args=[beer.id]))
         else:
-            messages.error(request, 'Failed to add beer. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add beer. Please ensure the form is valid.')
     else:
         form = BeerForm()
 
@@ -98,7 +100,9 @@ def edit_beer(request, beer_id):
             messages.success(request, 'Successfully updated beer!')
             return redirect(reverse('beer_detail', args=[beer.id]))
         else:
-            messages.error(request, 'Failed to update beer. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update beer. Please ensure the form is valid.')
     else:
         form = BeerForm(instance=beer)
         messages.info(request, f'You are editing {beer.name}')
