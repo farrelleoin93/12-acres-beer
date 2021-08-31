@@ -10,7 +10,8 @@ def update_rating_on_save(sender, instance, created, **kwargs):
     Update a beers average rating when a review
     is created or updated.
     """
-    instance.beer.calculate_rating()
+    if instance.beer:
+        instance.beer.calculate_rating()
 
 
 @receiver(post_delete, sender=BeerReview)
