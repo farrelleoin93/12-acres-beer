@@ -1,0 +1,100 @@
+[
+    {
+      "model": "beers.beer",
+      "pk": 1,
+      "fields": {
+        "name": "Pale Ale Bottles",
+        "description": "Our award winning flagship beer, our pale ale is a take on the American Pale Ale (APA) style, with more emphasis on the malt flavour than a traditional APA. Our own spring water is the main ingredient and we add our own pale ale base malt which forms the majority of the grist, to give the fermentable sugars and flavour to our beer. We also use a small quantity of three other European speciality malts, giving more malt body, texture and additional caramel flavours to the beer. The sweetness of the malt is balanced with American hops; Cascade, Willamette and Citra, with three additions to the boil to give that distinctive American Pale Ale bitterness and citrus flavour. Our pale ale is also dry hopped to give a lovely tropical fruit aroma to the finished beer. It goes great with spicy foods!",
+        "abv": "4.60",
+        "category": 1,
+        "price": "37.50",
+        "average_rating": "3.67",
+        "image_url": null,
+        "image": "pale-ale-square.jpg"
+      }
+    },
+    {
+      "model": "beers.beer",
+      "pk": 2,
+      "fields": {
+        "name": "Farmer's Tan Bottles",
+        "description": "Farmer’s Tan is a Hoppy American Brown Ale. A malt forward bee with caramel, light chocolate and nutty flavours balanced nicely with an earthy bitterness and subtle citrus flavours and aroma. By brewing with our malted barley and spring water from deep beneath the same land, we are creating unique craft Irish beers, with traceability from out ground to your glass.",
+        "abv": "5.00",
+        "category": 1,
+        "price": "37.50",
+        "average_rating": "5.00",
+        "image_url": null,
+        "image": ""
+      }
+    },
+    {
+      "model": "beers.beer",
+      "pk": 3,
+      "fields": {
+        "name": "Single Malt Lager Bottles",
+        "description": "Our Single Malt Lager is a very refreshing Kolsch/ German Style Beer with influence from the famous Beer of Koln. Brewed from 100% of our own malted barley, it is a crisp clean refreshing cold lagered beer. The delicate malt flavour and light fruity notes which come from the German yeast, is balanced by the classic European noble hop varieties Saaz and Heallertau Mittlefruh. The lager is given plenty of time to cold condition with extended time at a very low temperature in the tank. This beer is perfect for summer evenings and pairs nicely with fish, chicken, pastas and salads.",
+        "abv": "4.20",
+        "category": 2,
+        "price": "37.50",
+        "average_rating": "3.00",
+        "image_url": null,
+        "image": "single-malt-lager-square.jpg"
+      }
+    },
+    {
+      "model": "beers.beer",
+      "pk": 4,
+      "fields": {
+        "name": "Rye Indian Pale Ale Bottles",
+        "description": "Our Rye IPA is a speciality hybrid beer combining a full flavoured American style IPA with the spicy characteristics of a traditional Rye Ale. A burnished gold / red-gold colour, the aromas showcase classic North American hop flavour – grapefruit and citrusy fruit flavour with a touch of pine.  Distinct spicy rye character is evident in the first sip, and this combines with the hop fruit flavour in the beer. The mouth-feel gives a medium body lusciousness, which supports the spice of the malted rye in the beer.  A very well balanced, spice, malt sweetness, and fruit body, all integrate to deliver a range of complex full flavours. Pairs very well with roasted and barbequed meats.",
+        "abv": "5.50",
+        "category": 1,
+        "price": "37.50",
+        "average_rating": null,
+        "image_url": null,
+        "image": "rye-ipa-square.jpg"
+      }
+    },
+    {
+      "model": "beers.beer",
+      "pk": 5,
+      "fields": {
+        "name": "12 Acres Pale Ale Cans",
+        "description": "Our award winning flagship beer, our pale ale is a take on the American Pale Ale (APA) style, with more emphasis on the malt flavour than a traditional APA. Our own spring water is the main ingredient and we add our own pale ale base malt which forms the majority of the grist, to give the fermentable sugars and flavour to our beer. We also use a small quantity of three other European speciality malts, giving more malt body, texture and additional caramel flavours to the beer. The sweetness of the malt is balanced with American hops; Cascade, Willamette and Citra, with three additions to the boil to give that distinctive American Pale Ale bitterness and citrus flavour. Our pale ale is also dry hopped to give a lovely tropical fruit aroma to the finished beer. It goes great with spicy foods!",
+        "abv": "4.60",
+        "category": 1,
+        "price": "37.50",
+        "average_rating": "4.00",
+        "image_url": null,
+        "image": "pale-ale-can_xLIXS2P.jpg"
+      }
+    },
+    {
+      "model": "beers.beer",
+      "pk": 10,
+      "fields": {
+        "name": "test revire",
+        "description": "dfqwifheqoif",
+        "abv": "3.40",
+        "category": 1,
+        "price": "76.00",
+        "average_rating": null,
+        "image_url": null,
+        "image": ""
+      }
+    },
+    {
+      "model": "beers.beer",
+      "pk": 11,
+      "fields": {
+        "name": "lhfel",
+        "description": "dwqbfwk",
+        "abv": "3.00",
+        "category": 1,
+        "price": "3.00",
+        "average_rating": "4.00",
+        "image_url": null,
+        "image": ""
+      }
+    }
+  ]

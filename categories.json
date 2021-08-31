@@ -1,0 +1,26 @@
+[
+    {
+      "model": "beers.category",
+      "pk": 1,
+      "fields": {
+        "name": "ale",
+        "friendly_name": "Ale"
+      }
+    },
+    {
+      "model": "beers.category",
+      "pk": 2,
+      "fields": {
+        "name": "lager",
+        "friendly_name": "Lager"
+      }
+    },
+    {
+      "model": "beers.category",
+      "pk": 3,
+      "fields": {
+        "name": "stout",
+        "friendly_name": "Stout"
+      }
+    }
+  ]
