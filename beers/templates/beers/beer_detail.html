@@ -24,7 +24,6 @@
                     {% if beer.reviews.all %}
                         <div class="beer-stars" data-value="{{ beer.average_rating }}">{{ beer.average_rating }}</div>
                         <p class="text-muted">{{ beer.reviews.all | length }} review{{ beer.reviews.all | length | pluralize }}</p>
-                        <p>{{ beer.average_rating }}</p>
                     {% else %}
                         <p>No reviews</p>
                     {% endif %}
