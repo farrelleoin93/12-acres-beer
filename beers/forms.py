@@ -8,6 +8,7 @@ class BeerForm(forms.ModelForm):
     class Meta:
         model = Beer
         fields = '__all__'
+        exclude = ('average_rating',)
 
     image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
 
