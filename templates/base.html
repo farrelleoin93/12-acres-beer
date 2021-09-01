@@ -40,6 +40,11 @@
 <body>
     <header class="container-fluid fixed top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-lg-4">
+                <a href="{% url 'home' %}" class="nav-link">
+                    <img src="{{ MEDIA_URL }}12-acres-logo.jpg" width="50" height="50" alt="12 Acres Logo">
+                </a>
+            </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'beers' %}">
                     <div class="input-group w-100 rounded">
@@ -53,11 +58,6 @@
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="col-12 col-lg-4">
-                <a href="{% url 'home' %}" class="nav-link flex-center">
-                    <img src="{{ MEDIA_URL }}12-acres-logo.jpg" width="50" height="50" alt="12 Acres Logo">
-                </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
