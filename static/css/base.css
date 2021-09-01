@@ -292,6 +292,11 @@ footer {
     margin-bottom: 0;
 }
 
+footer hr {
+    border: 1px solid white;
+    width: 100%;
+}
+
 .footer-items {
     display: flex;
     align-items: center;
