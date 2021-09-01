@@ -54,6 +54,11 @@ body {
     transform: scale(1.02);
 }
 
+.btn:focus {
+    background-color: #f9931e;
+    color: #fff;
+}
+
 .btn:active {
     transform: scale(1.02);
 }
@@ -172,6 +177,11 @@ input[name='q']::placeholder {
 .maps {
     height: 500px;
     width: 100%;
+}
+
+.map-button:focus {
+    background-color: #f9931e;
+    color: #fff;
 }
 
 /* Blog details pages */

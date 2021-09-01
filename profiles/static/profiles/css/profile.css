@@ -15,3 +15,8 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.profile-button:focus {
+    background-color: #f9931e;
+    color: #fff;
+}
