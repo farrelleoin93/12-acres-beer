@@ -85,24 +85,30 @@ You can see the live website [here]().
 
 ---
 
-### Fonts
-- 
+#### Fonts
+- I had originally planned on using [Roboto](https://fonts.google.com/specimen/Roboto) as the font for this website but after some deliberation and feeedback from some friends that tested the website I decided to use [Poppins](https://fonts.google.com/?query=poppins) for all fonts on the page. I also decided to use a heavier version of [Poppins](https://fonts.google.com/?query=poppins) for the headings throughout the site.
 
 
 ### Colours
-- 
+- I decided to use orange (#f9931e) for the navbar, footer and throughout the website, I chose this colour as I felt that it worked well the colour of the beer in the hero image.
+- For most of the buttons on this s ite i used both bootstraps border-dark class and also a custom border-orange which uses the same orange (#f9931e) that is used throughout the site.
+- The background of the website is also white.
+- Any text that is on the orange background is white as I felt they worked well together.
+- I chose black test to be used on any white background .
 
 ### Icons
 - The icons that I used in this project were provided by [Font Awesome](https://fontawesome.com/). I decided to use icons as they offer a pleasant visual aide to the site, also users tend to know that icons usually work as buttons.
 
 ## <a name="database-model">Database Model</a>
+I used a relational database for this project. During the development SQLite was used and then Heroku Postgres was used in production. The database can be seen in the diagram below
 
+![Database Schema](wireframes/12-acres-database.png)
 
 ## <a name="wireframes">Wireframes</a>
 
 ---
 
-The wireframes for this website can be found at the following links:
+The wireframes for this website can be found [here](wireframes/)
 
 
 #### Changes to Wireframes
@@ -193,7 +199,6 @@ changed 400.html to {% url 'home' %}
 ## <a name="deployment">Deployment</a>
 
 ---
-## Deployment
 
 The master branch of this repository is the most up to date version and has been used for the deployed version of the site.
 
