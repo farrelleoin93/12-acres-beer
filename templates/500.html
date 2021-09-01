@@ -4,12 +4,9 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <!-- Error image -->
-        <div class="col-12">
-            <img class="w-100" src="{{ MEDIA_URL }}500.jpg" alt="500 Image" />
-        </div>
         <!-- Error content -->
-        <div class="col-12">
+        <div class="col-12 text-center">
+            <h1 class="mt-4"><strong>500</strong></h1>
             <h4>It looks like something went wrong!</h4>
             <h5>Would you like us to take you home?</h5>
             <a href="{% url 'home' %}" class="btn border-dark" aria-label="Home">Home</a>
