@@ -187,6 +187,9 @@ The following websites were used as learning resources throughout the building o
 ---
 The details of testing can be found [here](TESTING.md).
 
+## <a name="bugs">Bugs</a>
+changed 400.html to {% url 'home' %}
+
 ## <a name="deployment">Deployment</a>
 
 ---

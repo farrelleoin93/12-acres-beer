@@ -8,7 +8,7 @@
                 <h2 class="text-center my-4">{{ blog_detail.title }}</h2>
             </div>
             <div class="col-12 col-md-8 offset-md-2 mb-2">
-                {% if blog.image %}
+                {% if blog_detail.image %}
                     <a href="{{ blog_detail.image.url }}" target="_blank" class="flex-center">
                         <img class="card-img-top blog-detail-image" src="{{ blog_detail.image.url }}" alt="{{ post.title }}">
                     </a>
