@@ -14,7 +14,9 @@
                     <div class="col-sm-12 col-md-8 order-2 order-md-1  d-flex align-items-center">
                         <div class="card-body">
                             <h5 class="card-title">{{ post.title }}</h5>
-                            <p class="card-text">{{ post.author }}</p>
+                            {% if post.author %}
+                                <p class="card-text">{{ post.author }}</p>
+                            {% endif %}
                             <a href="{% url 'blog_detail' post.slug %}" class="btn dark-orange-background text-white"> Read Blog </a>
                         </div>
                     </div>

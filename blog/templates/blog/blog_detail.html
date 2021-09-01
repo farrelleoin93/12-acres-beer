@@ -19,7 +19,9 @@
             </div>
             <div class="col-12 col-md-8 offset-md-2 mb-2">
                 <p>{{ blog_detail.content }}</p>
-                <p class="text-muted">{{ blog_detail.author }}</p>
+                {% if blog_detail.author %}
+                    <p class="text-muted">{{ blog_detail.author }}</p>
+                {% endif %}
                 <p class="text-muted">{{ blog_detail.date_added }}</p>
                 {% if request.user.is_superuser %}
                         <div>
