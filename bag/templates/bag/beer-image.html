@@ -1,5 +1,5 @@
 {% if item.beer_product.image %}
-    <img class="w-75" src="{{ item.beer_product.image.url }}">
+    <img class="w-75" src="{{ item.beer_product.image.url }}" alt="{{ item.beer_product.name }}">
 {% else %}
-    <img class="w-75" src="{{ MEDIA_URL }}12-acres-logo.jpg" alt="{{ beer.name }}">
+    <img class="w-75" src="{{ MEDIA_URL }}default_bottle.png" alt="{{ item.beer_product.name }}">
 {% endif %}
