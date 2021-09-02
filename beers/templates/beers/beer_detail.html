@@ -103,8 +103,10 @@
             </div>
         </div>
         <div class="container">
+            <h3 class="text-center mt-3">Reviews</h3>
+
             {% for review in beer.reviews.all %}
-                <div class="col-sm-12 col-md-8 offset-md-2">
+                <div class="col-sm-12 col-md-8 offset-md-2 mt-3">
                     <div class="card mb-3 w-100">
                         <div class="card-header"><strong>{{ review.title }}</strong></div>
                         <div class="card-body text-secondary">
