@@ -14,7 +14,7 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
+    """ Add a quantity of the specified beer to the shopping bag """
 
     beer = get_object_or_404(Beer, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -33,7 +33,7 @@ def add_to_bag(request, item_id):
 
 
 def update_bag(request, item_id):
-    """ Update the quantity of the chosen product to the shopping bag """
+    """ Update the quantity of the chosen beer to the shopping bag """
 
     beer = get_object_or_404(Beer, pk=item_id)
     quantity = int(request.POST.get('quantity'))

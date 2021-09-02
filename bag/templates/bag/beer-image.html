@@ -1,0 +1,5 @@
+{% if beer.image %}
+    <img class="img-fluid rounded" src="{{ item.beer.image }}">
+{% else %}
+    <img class="img-fluid rounded" src="{{ MEDIA_URL }}12-acres-logo.jpg" alt="{{ beer.name }}">
+{% endif %}
