@@ -16,7 +16,21 @@
     color: #aab7c4;
 }
 
-.profile-button:focus {
+.btn:not(:disabled):not(.disabled).active:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.btn:focus {
+    background-color: #f9931e;
+    color: #fff;
+}
+
+.btn:active {
+    transform: scale(1.02);
+}
+
+#details-button:focus {
     background-color: #f9931e;
     color: #fff;
 }

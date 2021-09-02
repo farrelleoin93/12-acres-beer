@@ -295,8 +295,6 @@ Pages for 404 and 500 errors keep the user on the site when something goes wrong
    - This was used to compress the size of the hero image and the default card image.
 2. [Font Awesome](https://fontawesome.com/)
    - The icons used were found at Font Awesome.
-3. [Ucraft](https://www.ucraft.com/free-logo-maker)
-   - Ucraft was used to make the logo for the favicon.
 4. [Bootstrap](https://getbootstrap.com/)
    - Bootstrap was used throughout this website.
 5. [jQuery](https://jquery.com/)
@@ -319,8 +317,6 @@ Pages for 404 and 500 errors keep the user on the site when something goes wrong
     - Am I Responsive was used to see how the website looked on different devices.
 16. [Unsplash](https://unsplash.com/)
     - Unsplash was used to get images to use for the website.
-17. [Pexels](https://www.pexels.com/)
-    - Pexels was used to get images to use for the website.
 18. [Emailjs](https://www.emailjs.com/)
     - Emailjs was used so that the user can sign up for the newsletter.
 20. [JSHint](https://jshint.com/)
