@@ -77,6 +77,7 @@ You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com
 - The user should be able to to find out informatiion about the comany via blog posts.
 - The user should be able to register for the website.
 - The user should be able to buy beers easily and securely. 
+- The user should be able to leave reviews for the beers. 
 - The user should be able to safe their details to their profile and should also have the ability to edit them.
 - The user should be able to contact the owners of the company.
 
@@ -119,10 +120,23 @@ The wireframes for this website can be found [here](wireframes/)
 
 #### Site-wide
 
+**Navbar**
+ - I moved the search bar into the center of the navbar due to feedback that I recieved from people that tested the website for me.
+ - The search bar is replaced by a search icon that reveals the dropdown search box on mobile and tablets.
+ - The 12 Acres logo was moved to the left hand side of the navbar has the search bar is now in the center.
+ - I decided to change the background colour of the second nav bar underneath the main navbar to the orange that is use throughout the site (#f9931e) and I also added in icons to accompany the words to make it more visually appealing to the user.
+
+**Footer**
+ - I decided to remove the navigation links in the footer with information about 12 Acres. This decision was made as I feel it is more in line with commun UI pratices, also as the user has navigation links the navbar I felt that it was not necessary to also have them in the footer.
+ - The newsletter subscription form was moved to the left hand side of the footer on tablet and desktop and to the top of the footer on mobile devices, this was due to feedback that I recieved from testers of this site.
+ - I also added a horizontal line between the company information and newsletter section and the social media links section on desktop and tablet devices and on mobile devices a horizontal line was added between each section of the footer. This was done as the footer was looking quite crowded.
+
+**Beers page**
+ - I added box shadow around each beer so that each beer card is clearly defined.
 
 **Responsive**
 
-This site has been designed and made with all users in mind and tthus is visually appealing on desktops, tablets and mobile devices.
+This site has been designed and made with all users in mind and thus is visually appealing on desktops, tablets and mobile devices.
 
 
 **Navbar**
