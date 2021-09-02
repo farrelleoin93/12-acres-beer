@@ -113,21 +113,36 @@ The wireframes for this website can be found [here](wireframes/)
 
 
 ### Changes to Wireframes
-#### Site-wide
+**Site-wide**
 
-**Navbar**
+#### Navbar
  - I moved the search bar into the center of the navbar due to feedback that I recieved from people that tested the website for me.
  - The search bar is replaced by a search icon that reveals the dropdown search box on mobile and tablets.
  - The 12 Acres logo was moved to the left hand side of the navbar has the search bar is now in the center.
  - I decided to change the background colour of the second nav bar underneath the main navbar to the orange that is use throughout the site (#f9931e) and I also added in icons to accompany the words to make it more visually appealing to the user.
 
-**Footer**
+#### Footer
  - I decided to remove the navigation links in the footer with information about 12 Acres. This decision was made as I feel it is more in line with commun UI pratices, also as the user has navigation links the navbar I felt that it was not necessary to also have them in the footer.
  - The newsletter subscription form was moved to the left hand side of the footer on tablet and desktop and to the top of the footer on mobile devices, this was due to feedback that I recieved from testers of this site.
  - I also added a horizontal line between the company information and newsletter section and the social media links section on desktop and tablet devices and on mobile devices a horizontal line was added between each section of the footer. This was done as the footer was looking quite crowded.
 
+#### Other
+ - The placeholders in each form field with the exception of the checkout, sign in and sign up pages were replaced with titles just above each field.
+
 **Beers page**
+ - I added buttons at the top of the page so that the use can filter the results by the type of beer that they are searching for.
  - I added box a shadow around each beer so that each beer card is clearly defined.
+
+**Checkout page**
+ - On tablet devices the order summary section is placed in top of the user details section instead of beside it.
+ - On mobile devices the order summary section is placed in top of the user details section instead of below it.
+
+**Find our beers page**
+ - The heading is aligned left instead of center
+ - On mobile view the buttons are positioned on topo of eachother rather than side by side. 
+
+**Add/edit a blog page**
+ - A slug field was added to the page.
 
 ## <a name="features">Features</a>
 
