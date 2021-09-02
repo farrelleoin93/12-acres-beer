@@ -66,8 +66,10 @@
                         </table>
                     </div>
                 {% else %}
+                <div class="text-center">
                     <h4>Your bag is empty</h4>
                     <a href="{% url 'beers' %}" class="btn text-orange border-orange">Shop for beers</a>
+                </div>
                 {% endif %}
             </div>
             {% if bag_items %}
