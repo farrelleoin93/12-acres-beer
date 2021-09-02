@@ -129,6 +129,7 @@ def delete_beer(request, beer_id):
     return redirect(reverse('beers'))
 
 
+@login_required
 def add_review(request, beer_id):
     """ Add a review for a beer """
     beer = get_object_or_404(Beer, pk=beer_id)
@@ -176,6 +177,7 @@ def add_review(request, beer_id):
     return render(request, context)
 
 
+@login_required
 def edit_review(request, review_id):
     """
     Edit a review
@@ -209,6 +211,7 @@ def edit_review(request, review_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_review(request, review_id):
     """
     Allows superuser to delete a users review.
