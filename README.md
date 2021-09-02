@@ -4,6 +4,11 @@ You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com
 
 **To open any links in this document in a new tab press `CTRL + Click`.**
 
+The following details should be used when trying to submit an order on the checkout page:
+- Card Number: 4242 4242 4242 4242
+- Expiration Date: Any future date (e.g. 02/24)
+- CVC: Any three digits
+
 # UX
 ## Contents
 
@@ -57,7 +62,7 @@ You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com
 |          ---         |                                    ---                                   |                              ---                              |
 | Site admin/superuser | add new beers to the website                                  | continuously make new beers available          |
 | Site admin/superuser | edit existing beers                                                  | update the website                                |
-| Site admin/superuser | delete existing beers                                        | delete beer 12 Acres do not make anymore                       |
+| Site admin/superuser | delete existing beers                                        | delete beers 12 Acres do not make anymore                       |
 | Site admin/superuser | create blogs                                                            | inform users about any developments at the company                          |
 | Site admin/superuser | update blog entries                                                     | update users on any developments at the company                      |
 | Site admin/superuser | delete blog entries                                                     | remove blog details           |

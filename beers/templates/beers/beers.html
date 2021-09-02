@@ -7,16 +7,16 @@
         <div class="col-12">
             <h2 class="text-center my-4">Beers</h2>
             <div class="flex-center mb-4 mt-2">
-                <a href="{% url 'beers' %}?category=ale,lager,stout" class="btn border-orange">
+                <a href="{% url 'beers' %}?category=ale,lager,stout" class="btn border-orange" aria-label="all beer">
                     <span>All Beers</span>
                 </a>
-                <a href="{% url 'beers' %}?category=ale" class="btn ml-1 border-orange">
+                <a href="{% url 'beers' %}?category=ale" class="btn ml-1 border-orange" aria-label="Ale">
                     <span>Ale</span>
                 </a>
-                <a href="{% url 'beers' %}?category=lager" class="btn ml-1 border-orange">
+                <a href="{% url 'beers' %}?category=lager" class="btn ml-1 border-orange" aria-label="Lager">
                     <span>Lager</span>
                 </a>
-                <a href="{% url 'beers' %}?category=stout" class="btn ml-1 border-orange">
+                <a href="{% url 'beers' %}?category=stout" class="btn ml-1 border-orange" aria-label="Stout">
                     <span>Stout</span>
                 </a>
             </div>
