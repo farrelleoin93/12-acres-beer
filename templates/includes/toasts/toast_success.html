@@ -17,8 +17,8 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-3 my-1 ml-2">
-                            {% if beer.image %}
-                                <img class="w-100" src="{{ item.beer_product.image.url }}" alt="{{ beer.name }}">
+                            {% if item.beer_product.image %}
+                                <img class="w-100" src="{{ item.beer_product.image.url }}" alt="{{ beer_product.name }}">
                             {% else %}
                                 <img class="w-100" src="{{ MEDIA_URL }}12-acres-logo.jpg" alt="{{ beer.name }}">
                             {% endif %}
