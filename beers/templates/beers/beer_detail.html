@@ -91,7 +91,7 @@
                             </div>
                     </form>
                 {% else %}
-                    <h3 class="text-center">Leave a Review</h3>
+                    <h3 class="text-center mt-3">Leave a Review</h3>
                     <form method="POST" action="{% url 'add_review' beer.id %}" class="form">
                         {% csrf_token %}
                         {{ form | crispy }}
@@ -102,7 +102,7 @@
                 {% endif %}
             </div>
         </div>
-        <div class="container mt-4">
+        <div class="container">
             {% for review in beer.reviews.all %}
                 <div class="col-sm-12 col-md-8 offset-md-2">
                     <div class="card mb-3 w-100">
