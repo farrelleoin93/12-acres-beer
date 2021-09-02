@@ -116,15 +116,157 @@ The wireframes for this website can be found [here](wireframes/)
 ## <a name="features">Features</a>
 
 ---
-**The main features of this website are:**
-- an attractive design.
-- a navigation bar that the user understands how to use even on their first visit to the website and that brings them to the appropriate part of the website.
-- 
 
-**Features that will be added in the future are:**
-- an option to add videos of how to grow seeds.
-- a comment section so people can provide some extra tips on how to grow seeds.
+#### Site-wide
 
+
+**Responsive**
+
+This site has been designed and made with all users in mind and tthus is visually appealing on desktops, tablets and mobile devices.
+
+
+**Navbar**
+
+The navbar is consistant on all pages throughout the website and adheres to common practices which users have come to expect from navbars, for example a dropdown appears on smaller devices. 
+
+**Search bar**
+
+The search bar finds juices matching a user's query either by name or from their constituent flavours. If a user knows what they want, this is their route to finding it. The user's search term is displayed once submitted.
+
+**Toasts**
+
+These pop-ups give context to and confirmation of user actions, including error messages, login/out, and success on leaving a review or on checkout. Where appropriate they also show a summarised copy of the shopping cart with a link to review before heading to checkout.
+
+#### Page-specific
+
+**Home**
+
+- Striking hero image draws potential customers in and a simple call to action links straight to the juice products page.
+- Trio of action cards invite further exploration of the home page (the brands and flavour categories) and a link to sign up to start receiving rewards.
+- Brand section establishes how Moose Juice has separated its product range, gives details about each brand and a link to the respective juices.
+- Flavour categories need no more explanation than a bold thumbnail icon which will filter the juices accordingly.
+
+**Products**
+
+- Sort field to order filtered juices by new arrivals, rating or name. The number of matching juices is displayed.
+- Product cards show the essential details (name, category, rating and price), with a satisfying box-shadow hover effect.
+- SVG used to depict each card, with an endless possibility of colours as chosen by the admin.
+- Product rating is shown depicted as a set of stars.
+- Product RRP is visible and if on sale this is struck out and replaced by the sale price.
+
+  *Registered users*
+- Can add/remove favourites by clicking the heart icon.
+
+  *Super users*
+- Those with admin rights get an extra icon which links to the edit product page.
+
+**Product details**
+
+- In addition to the information and functionality of the products page, a product description and list of individual flavour notes is included.
+- Flavours link to all other products with the same flavour.
+- A form allows users to pick options for the product, as well as the quantity, before submitting and adding the item to their cart.
+- Only options available for the brand in question are available.
+- Product reviews can be found under the form, including the star rating and whether the review is following a verified purchase.
+
+  *Registered users*
+- Have the ability to leave and edit reviews, but not to delete them.
+
+  *Super users*
+- Can both edit and delete a juice from the product detail page.
+- Can edit and delete any user's review.
+
+**Cart**
+
+- Allows line item quantities to be altered or removed from the cart and updates on each change.
+- Shows cart total, delivery and grand total of the order, as well as how many points they would earn if they were registered.
+- If cart total is less than free delivery threshold, amount required to receive free delivery is shown.
+- Protection in case an item in the cart has been deleted from the database, in which case the item will not be added and a message alerting the user will be displayed.
+
+  *Registered users*
+- Can see how many points they have available and can choose to redeem them on this order.
+- If discount applied, the total updates accordingly to show discounted price and option to remove discount is offered.
+
+**Checkout**
+
+- Shows order summary and form to input delivery details.
+- Payment handled by Stripe and reliability improved by use of webhooks.
+
+  *Registered users*
+- If delivery details previously saved, form will be pre-populated with them.
+- Option to save delivery details for future purchases.
+- If discount applied on the cart page, this is shown along with points redeemed.
+
+**Checkout success**
+
+Shows a summary of the order identifier, contact info and delivery information provided, as well as details of the order itself. On checkout the user is sent a confirmation email with details about their order.
+
+**Account dashboard**
+
+  *Registered users*
+- Shows how many points a user has on their profile, with other information split into three sections:
+- Details:
+  - default contact and delivery info
+  - ability to update to make future checkouts quicker
+- Orders:
+  - view previous orders using same template as checkout success page
+  - extra option of repeating the order
+  - repeating an order will repopulate the cart with previous order items
+- Points:
+  - summary of when and how points have been earned (account creation, purchases and reviews for verified purchases)
+  - for reviews, includes a link to the product reviewed
+
+**Add/edit product**
+
+  *Super users*
+- Can add/edit a juice, chosing all of its required features
+- Can choose whether or not the juice is on sale
+- A mockup of the juice as a product card is displayed, the name and colour of which are updated in real time to give a sense of how it will look when in the store
+- On submitting the addition/change, super user is sent to the update product's details page
+
+**Secure accounts**
+Account security is covered by Django's allauth.
+
+**CRUD functionality**
+
+All users can:
+- Read all products
+
+Registered users can:
+- Create product reviews
+- Update product reviews
+- Update their delivery details
+- Update their list of favourites
+
+Superusers can:
+- Frontend:
+  - Create, Update and Delete products
+  - Create, Update and Delete any product reviews
+
+**Static and image file hosting**
+
+Static and image files are served from an Amazon S3 Bucket.
+
+**Confirm delete**
+When users request to delete a product or review, a modal pops up to confirm they wish to do so to prevent accidental deletion.
+
+**Access protection**
+
+Routes are protected using Django's `@login_required` route decorators to ensure non-super-users cannot interfere with the database.
+
+**404 and 500 error handling**
+Pages for 404 and 500 errors keep the user on the site when something goes wrong, allowing them to return to the content with minimal disruption.
+
+<span id="features-future"></span>
+
+### Future
+- Blog app to display industry and Moose Juice news, including comments feature to engage with the community and gather more feedback
+- Pagination and advanced search features to handle an increasing product list
+- Site-wide use of ajax requests to reduce number of page reloads
+- A 'suggested juices' section to encourage users to explore additional purchases
+- Apple / Google pay to improve checkout experience
+- Contact Us for improved correspondance with users
+- About Us page to give insight into Moose Juice's origins and methods for creating their juices
+- 'Learning Zone' to educate potential customers about the benefits of vaping and to dispell some of the myths surrounding it
 ## <a name="technologies">Technologies</a>
 
 ---
