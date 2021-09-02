@@ -242,7 +242,7 @@
                <form id="newsletterForm" class="w-75" action="{% url 'home' %}" method="POST">
                    {% csrf_token %}
                    {{ newsletter_form|crispy }}
-                   <input type="submit" class="btn bg-white text-black" value="Submit">
+                   <input type="submit" class="btn bg-white text-black" value="Submit" aria-label="Submit">
                </form>
            </div>
            <hr class="d-md-none">

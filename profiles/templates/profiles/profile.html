@@ -12,10 +12,10 @@
             <div class="col-12">
                 <h2 class="my-4 text-center">My Profile</h2>
                 <div class="flex-center">
-                    <a id="details-button" class="btn border-dark" tabindex="1">
+                    <a id="details-button" class="btn border-dark" tabindex="1" aria-label="Details">
                         <span>Your Details</span>
                     </a>
-                    <a id="orders-button" class="btn ml-1 border-dark" tabindex="1">
+                    <a id="orders-button" class="btn ml-1 border-dark" tabindex="1" aria-label="Orders">
                         <span>Your Orders</span>
                     </a>
                 </div>
@@ -25,7 +25,7 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="flex-center">
-                        <button class="btn border-dark">Update Details</button>
+                        <button class="btn border-dark" aria-label="Update">Update Details</button>
                     </div>
                 </form>
             </div>
