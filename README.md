@@ -112,12 +112,7 @@ I used a relational database for this project. During the development SQLite was
 The wireframes for this website can be found [here](wireframes/)
 
 
-#### Changes to Wireframes
-
-## <a name="features">Features</a>
-
----
-
+### Changes to Wireframes
 #### Site-wide
 
 **Navbar**
@@ -132,7 +127,13 @@ The wireframes for this website can be found [here](wireframes/)
  - I also added a horizontal line between the company information and newsletter section and the social media links section on desktop and tablet devices and on mobile devices a horizontal line was added between each section of the footer. This was done as the footer was looking quite crowded.
 
 **Beers page**
- - I added box shadow around each beer so that each beer card is clearly defined.
+ - I added box a shadow around each beer so that each beer card is clearly defined.
+
+## <a name="features">Features</a>
+
+---
+
+#### Site-wide
 
 **Responsive**
 
