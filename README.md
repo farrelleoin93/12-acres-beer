@@ -1,6 +1,6 @@
-You can see the live website [here]().
+You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com/).
 
-![Responsiveness]()
+![Responsiveness](https://github.com/farrelleoin93/12-acres-beer/blob/main/wireframes/responsive.PNG)
 
 **To open any links in this document in a new tab press `CTRL + Click`.**
 
