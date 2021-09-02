@@ -59,7 +59,7 @@ h1,h2,h3,h4 {
 }
 
 .btn:focus {
-    background-color: #f9931e;
+    background-color: #f9931e !important;
     color: #fff;
 }
 
@@ -153,6 +153,11 @@ input[name='q']::placeholder {
 
 /* Beer */
 
+.clicked-button {
+    background-color: #f9931e;
+    color: #fff;
+}
+
 .beer-card {
     height: 300px;
     object-fit: cover;
@@ -182,11 +187,11 @@ input[name='q']::placeholder {
     height: 500px;
     width: 100%;
 }
-
+/* 
 .map-button:focus {
     background-color: #f9931e;
     color: #fff;
-}
+} */
 
 /* Blog details pages */
 

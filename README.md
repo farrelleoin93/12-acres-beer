@@ -43,21 +43,21 @@ You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com
 | Unregistered user       | filter beers                                                | find specific types of beer                         |
 | Unregistered user       | read details about each beer                                             | see if it is the type of beer that I want      |
 | Unregistered user       | see what pubs and shops sell the beers              | have another way to buy them other than the website         |
-| Unregistered user       | access contact details                                                  | get in touch with any questions                               |
+| Unregistered user       | access contact details                                                  | get in touch with 12 Acres                                |
 | Unregistered user       | easily register an account                                      | use the site easier in the future                 |
 |          ---         |                                    ---                                   |                              ---                              |
-| Registered user      | log in and log out of my profile account                                | so that my personal information will be safe        |
+| Registered user      | log in and log out of my profile account                                | save/update my personal information         |
 | Registered user      | store my details for later use                                          | avoid having to fill in my details each time        |
 | Registered user      | update my details                                                        | update address and other details in case they change          |
 | Registered user      | store my order history                                               | access my previous orders                         |
 | Registered user      | leave a review                                               | inform future users about the beer                         |
-| Registered user      | review my purchase at the checkout                                  | decide whether to add or edit order before confirming     |
-| Registered user      | Make secure payments                                                     | ensure my payments are securely handled                       |
-| Registered user      | Receive email confirmation of my payment                        | confirm that my payment was made |
+| Registered user      | review my purchase at the checkout                                  | decide whether to add or edit the order before confirming     |
+| Registered user      | Make secure payments                                                     | ensure that my payments are securely handled                       |
+| Registered user      | Receive email confirmation of my order                        | confirm that my order was successful |
 |          ---         |                                    ---                                   |                              ---                              |
 | Site admin/superuser | add new beers to the website                                  | continuously make new beers available          |
-| Site admin/superuser | update project listings                                                 | update new info from projects                                 |
-| Site admin/superuser | delete existing project listings                                        | delete projects that may cease to exist                       |
+| Site admin/superuser | edit existing beers                                                  | update the website                                |
+| Site admin/superuser | delete existing beers                                        | delete beer 12 Acres do not make anymore                       |
 | Site admin/superuser | create blogs                                                            | inform users about any developments at the company                          |
 | Site admin/superuser | update blog entries                                                     | update users on any developments at the company                      |
 | Site admin/superuser | delete blog entries                                                     | remove blog details           |
@@ -344,6 +344,7 @@ The details of testing can be found [here](TESTING.md).
 
 ## <a name="bugs">Bugs</a>
 changed 400.html to {% url 'home' %}
+tab index
 
 ## <a name="deployment">Deployment</a>
 
@@ -609,13 +610,16 @@ AWS_SECRET_ACCESS_KEY
 
 ### Media
 
-- All images used on this website were found on [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/).
+- All images used on this website except the hero image on the home page were taken from 12 Acres current website and Facebook page with permission.
+- The hero image was found [here](https://unsplash.com/photos/2UsNF4Az-Ko?fbclid=IwAR1bL0CLNgzS0jWV3aOwWHUBx4u8LYRbQQW62LCW4alEi_RDbfhPCkgXUVE) on Unsplashed and was taken by Merritt Thomas.
 
 ### Code 
 
 
 
 ### Content
+
+- The content for this site was taken from both 12 Acres website and also some of the beers information and names were taken from [Galaw Bay Brewery](http://www.galwaybaybrewery.com/) as 12 Acres do not have many beers. Permission was received from both of these companies to use their information prior to starting this project.
 
 - 
 ## <a name="acknowledgements">Acknowledgements</a>
@@ -624,6 +628,8 @@ AWS_SECRET_ACCESS_KEY
 - I would also like to thank the turors at Code Institute, in particular ....
 for their help during this project.
 - I would also like to thank thank Megan Lee, Kate Farrell, and Claire Shortall for testing my project and providing me with some feedback.
+- I would also like to thank [12 Acres](https://12acresbrewing.ie/) for allowing me to make a website using their pictures and information about the company and beers.
+- [Galaw Bay Brewery](http://www.galwaybaybrewery.com/) also gave me permission to use information about their products.
 
 
 ## <a name="contact">Contact</a>
