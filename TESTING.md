@@ -373,6 +373,11 @@ The following tests have been carried out without issue:
 - Best Practices: **87%**
 - SEO: **100%**
 
+[W3C - HTML](https://validator.w3.org/) 0 errors - **PASS**
+[W3C - CSS](https://jigsaw.w3.org/css-validator/) - 0 errors **PASS**
+[JS Hint](https://jshint.com/) - 0 errors - **PASS**
+[Pep8 Online](http://pep8online.com/) - 0 errors - **PASS**
+
 
 
 ## <a name="responsiveness">Responsivenss</a>
