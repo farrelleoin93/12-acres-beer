@@ -1,4 +1,7 @@
-You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com/).
+This is an ecommerce website for 12 Acres crafe beer company. 12 Acres are a small family run brewery in Laois, Ireland. I recieved permission from 12 Acres to build this website using images and information that I found on their website and Facebook page.
+
+
+**You can see the live website [here](https://farrelleoin93-12-acres.herokuapp.com/).**
 
 ![Responsiveness](https://github.com/farrelleoin93/12-acres-beer/blob/main/wireframes/responsive.PNG)
 
