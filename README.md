@@ -19,7 +19,6 @@ The following details should be used when trying to submit an order on the check
 
 - [UX](#ux)
   - [User Stories](#user-stories)
-  - [Site Owner Goals](#goals)
   - [User Requirements and Expectations](#user-requirements)
   - [Design Choices](#design-choices)
     - Fonts
@@ -297,41 +296,44 @@ Pages for 404 and 500 errors keep the user on the site when something goes wrong
 - [JavaScript](https://en.wikipedia.org/wiki/javascript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+### Frameworks
+
+- [Django](https://www.djangoproject.com/)
+   - Django was used throughout this website
+- [Bootstrap](https://getbootstrap.com/)
+   - Bootstrap was used throughout this website.
+- [jQuery](https://jquery.com/)
+   - jQuery was used for initializing the Materialize features.
+
 ### Other
 
-1. [Tiny PNG](https://tinypng.com/)
+- [Tiny PNG](https://tinypng.com/)
    - This was used to compress the size of the hero image and the default card image.
-2. [Font Awesome](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
    - The icons used were found at Font Awesome.
-3. [Bootstrap](https://getbootstrap.com/)
-   - Bootstrap was used throughout this website.
-4. [jQuery](https://jquery.com/)
-   - jQuery was used for initializing the Materialize features.
-5. [Google Fonts](https://fonts.google.com/)
+- [Google Fonts](https://fonts.google.com/)
    - The fonts used for this website were found at Google Fonts.
-6. [Balsamiq](https://balsamiq.com/)
+- [Balsamiq](https://balsamiq.com/)
    - The wireframes were made using Balsamiq.
-7. [Github](https://github.com/)
+- [Github](https://github.com/)
    - This project was stored on Github.
-8. [Gitpod](https://www.gitpod.io/)
+- [Gitpod](https://www.gitpod.io/)
     - Gitpod was used to write the code used for this website.
-9. [Git](https://en.wikipedia.org/wiki/Git)
+- [Git](https://en.wikipedia.org/wiki/Git)
     - The version control system used for this project was Git.
-10. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Chrome DevTools was used throughout the building of this website.
-11. [WebFormatter](https://webformatter.com/html) 
-    - WebFormatter was used to format the html and css files.
-12. [Am I Responsive](http://ami.responsivedesign.is/) 
+- [Am I Responsive](http://ami.responsivedesign.is/) 
     - Am I Responsive was used to see how the website looked on different devices.
-13. [Unsplash](https://unsplash.com/)
+- [Unsplash](https://unsplash.com/)
     - Unsplash was used to get images to use for the website.
-14. [Emailjs](https://www.emailjs.com/)
+- [Emailjs](https://www.emailjs.com/)
     - Emailjs was used so that the user can sign up for the newsletter.
-25. [JSHint](https://jshint.com/)
+- [JSHint](https://jshint.com/)
     - JSHint was used to test the JavaScript code.
-26. [Python Tester](https://extendsclass.com/python-tester.html)
+- [Python Tester](https://extendsclass.com/python-tester.html)
     - Used to test python code.
-27. [Heroku](https://id.heroku.com/login)
+- [Heroku](https://id.heroku.com/login)
     - Heroku was used to deploy this website
 
 
@@ -642,7 +644,7 @@ AWS_SECRET_ACCESS_KEY
 ## <a name="acknowledgements">Acknowledgements</a>
 
 - I would like to thank mentor Akshat Garg for all his invaluable advice during my three mentor sessions.
-- I would also like to thank the turors at Code Institute, in particular ....
+- I would also like to thank the turors at Code Institute, in particular Michael, Sheryl, John, Stephen, Alan and Igor.
 for their help during this project.
 - I would also like to thank thank Megan Lee, Kate Farrell, and Claire Shortall for testing my project and providing me with some feedback.
 - I would also like to thank [12 Acres](https://12acresbrewing.ie/) for allowing me to make a website using their pictures and information about the company and beers.
