@@ -633,6 +633,7 @@ AWS_SECRET_ACCESS_KEY
 
 ### Code
 - The code for the star rating was modified from [Moose Juice](https://github.com/Edb83/moose-juice)
+- Some code ideas and inspiration for the Find our beers Google maps section were found at [Experience Cornwall](https://github.com/Gregory4321/milestone-project-2) an [Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia)
 
 ### Content
 
