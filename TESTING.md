@@ -237,7 +237,10 @@ The following tests have been carried out without issue:
 - Confirm that an empty Google map square is centeres on Ireland
     - CHECK
 
-- Confirm that if user clicks on a button markers appear on the map and the buttons background colour changes so that the user knows which button is in affect
+- Confirm that if a user clicks on a button markers appear on the map and the buttons background colour changes so that the user knows which button is in affect
+    - CHECK
+
+- Confirm that if a user clicks on a marker that an info box displays information about the location.
     - CHECK
 
 
