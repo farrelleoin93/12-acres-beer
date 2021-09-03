@@ -111,7 +111,7 @@
                     <div class="card mb-3 w-100">
                         <div class="card-header"><strong>{{ review.title }}</strong></div>
                         <div class="card-body text-secondary">
-                        <h5 class="card-title"><div class="beer-stars" data-value="{{ review.rating }}"></div></h5>
+                        <div class="card-title"><div class="beer-stars" data-value="{{ review.rating }}"></div></div>
                         {% if review.verified_purchase %}
                             <p><strong>Verified Purchase</strong></p>
                         {% endif %}
