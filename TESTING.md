@@ -15,13 +15,13 @@
 - The user can enter any word into the seach bar in the navbar and they will be redirected to the beers page. This page will only display beers that contain the queried word in their name and/or description.
 
 **filter beers so that I can find specific types of beer**
-- On the beers page their are buttons at the top labeled: All beers, Ale, Lager and Stout, if the user clicks one of these buttons only the relevant beers are displayed.
+- On the beers page there are buttons at the top labeled: All beers, Ale, Lager and Stout, if the user clicks one of these buttons only the relevant beers are displayed.
 
-**read details about each beer so that I can see if it is the type of beer tha I want**
+**read details about each beer so that I can see if it is the type of beer that I want**
 - If the user clicks on a specific beer on the beers page they are brought to a beer details page where they can read about the beer, see the alcohal percentage, reviews and more.
 
 **see what pubs and shops sell the beers so that I can have another way to buy them other than the website**
-- On the find our beers page the user can click one of two buttons (Off-licenses or Bars and Restaurants). When they click a button markers appear on the Google maps feature showing them the location of either te off-licences or bars that stock 12 Acres beer.
+- On the find our beers page the user can click one of two buttons (Off-licenses or Bars and Restaurants). When they click a button markers appear on the Google maps feature showing them the location of either the off-licences or bars that stock 12 Acres beer.
 
 **access contact details so that I can get in touch with 12 Acres**
 - The Contact us page is available to all users of the website. On this page the user enters their details and message into a form and an email is sent to 12 Acres from their email account.

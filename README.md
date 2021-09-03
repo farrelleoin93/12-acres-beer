@@ -196,11 +196,12 @@ The footer contains information about 12 Acres such as their phone number and ad
 - The beer details pages conain the same information that is displayed in the cards on the beer page along with a description of the beer.
 - A form allows the users to select how many bottles/cans they would like of the beer in question.
 - Two buttons give the user the options to either add the beer to their bag or to return to the beers page.
+- If a user has actually purchased a beer that they review "Verified Purchase appears on the review"
 
   *Registered users*
-- Have the ability to leave and edit reviews, but not to delete them.
+- Have the ability to leave and edit reviews, but not delete them.
 
-  *Super users*
+  *Admin/Superusers*
 - Can both edit and delete a beer from the page.
 - Can edit and delete any user's review.
 
@@ -352,9 +353,6 @@ The following websites were used as learning resources throughout the building o
 ---
 The details of testing can be found [here](TESTING.md).
 
-## <a name="bugs">Bugs</a>
-changed 400.html to {% url 'home' %}
-tab index
 
 ## <a name="deployment">Deployment</a>
 
@@ -638,7 +636,7 @@ AWS_SECRET_ACCESS_KEY
 
 ### Content
 
-- The content for this site was taken from both 12 Acres website and also some of the beers information and names were taken from [Galaw Bay Brewery](http://www.galwaybaybrewery.com/) as 12 Acres do not have many beers. Permission was received from both of these companies to use their information prior to starting this project.
+- The content for this site was taken from both 12 Acres website and also some of the beers information and names were taken from [Galway Bay Brewery](http://www.galwaybaybrewery.com/) as 12 Acres do not have many beers. Permission was received from both of these companies to use their information prior to starting this project.
 
 - 
 ## <a name="acknowledgements">Acknowledgements</a>
