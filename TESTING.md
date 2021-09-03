@@ -3,6 +3,8 @@
 - [User Stories](#user-stories)
 - [Manual Testing](#manual-testing)
 - [Automated Testing](#auto-testing)
+- [Responsiveness](#responsiveness)
+- [Bugs](#bugs)
 
 ### As an unregistered user I want the ability to...
 **easily navigate the site so that I can find what I am looking for**
@@ -304,28 +306,35 @@ The following tests have been carried out without issue:
 **Home page**
 
 - Performance: **95%**
-- Accessibility: **80%**
+- Accessibility: **88%**
 - Best Practices: **87%**
 - SEO: **100%**
 
 **Beers page**
 
 - Performance: **96%**
-- Accessibility: **81%**
+- Accessibility: **89%**
 - Best Practices: **87%**
 - SEO: **100%**
 
 **Beer detail page**
 
 - Performance: **96%**
-- Accessibility: **70%**
+- Accessibility: **87%**
 - Best Practices: **87%**
 - SEO: **100%**
 
 **Add/edit beer page**
 
 - Performance: **97%**
-- Accessibility: **73%**
+- Accessibility: **81%**
+- Best Practices: **87%**
+- SEO: **100%**
+
+**Bag page**
+
+- Performance: **97%**
+- Accessibility: **86%**
 - Best Practices: **87%**
 - SEO: **100%**
 
@@ -346,7 +355,7 @@ The following tests have been carried out without issue:
 **Add/edit blog page**
 
 - Performance: **96%**
-- Accessibility: **73%**
+- Accessibility: **81%**
 - Best Practices: **87%**
 - SEO: **100%**
 
@@ -363,3 +372,70 @@ The following tests have been carried out without issue:
 - Accessibility: **81%**
 - Best Practices: **87%**
 - SEO: **100%**
+
+
+
+## <a name="responsiveness">Responsivenss</a>
+
+The site has been designed with a mobile-first philosophy and is supported by [Bootstrap](https://getbootstrap.com/), has been tested at all stages of development using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools).
+
+
+### Browsers
+
+Tested on:
+
+- Chrome
+    - no issues
+- Edge
+    - no issues
+- Firefox
+    - no issues
+- Safari (iOS)
+    - no-issues
+
+### Screen sizes
+
+Tested with Chrome DevTools using profiles for the following devices, accounting for minimum screen widths of 320px:
+
+- Galaxy S5
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+- iPad Pro
+
+... and also using the responsive profiles of:
+
+- Mobile S (320px)
+- Mobile M (375px)
+- Mobile L (425px)
+- Tablet (768px)
+- Laptop (1024px)
+- Laptop L (1440px)
+
+Real world testing on:
+
+- Oppo a42
+- iPhone SE
+- iPhone x
+- Acer Aspire
+- Macbook
+
+## <a name="bugs">Bugs</a>
+
+### Resolved
+
+- Bug: blog page was giving a 404 error
+- Solution: changed url from path('slug:slug' ...) to path(blog_detail/slug:slug) and placed the add_blog url above the blog_detail rather than beneath
+
+- Bug: The focus psuedo class was not working on the buttons in the profile page.
+- Solution: This was fixed by adding tabindex="1" to each button element.
+
+- Bug: I got the error "undefined name DATABASES"
+- Solution: Fixed typo and by replacing "DATABASES -" with "DATABASES ="
+
+- Bug: NoReverseMatch at /blog/
+- Solution: Added slug field to form as no slug was being added for blog posts
+
+- Bug: Beer image was not showing in the bag app.
+- Solution: Changed code from src="{{ beer_product.image.url }}" to src="{{ item.beer_product.image.url }}"

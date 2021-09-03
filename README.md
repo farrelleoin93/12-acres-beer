@@ -300,35 +300,35 @@ Pages for 404 and 500 errors keep the user on the site when something goes wrong
    - This was used to compress the size of the hero image and the default card image.
 2. [Font Awesome](https://fontawesome.com/)
    - The icons used were found at Font Awesome.
-4. [Bootstrap](https://getbootstrap.com/)
+3. [Bootstrap](https://getbootstrap.com/)
    - Bootstrap was used throughout this website.
-5. [jQuery](https://jquery.com/)
+4. [jQuery](https://jquery.com/)
    - jQuery was used for initializing the Materialize features.
-7. [Google Fonts](https://fonts.google.com/)
+5. [Google Fonts](https://fonts.google.com/)
    - The fonts used for this website were found at Google Fonts.
-8. [Balsamiq](https://balsamiq.com/)
+6. [Balsamiq](https://balsamiq.com/)
    - The wireframes were made using Balsamiq.
-9. [Github](https://github.com/)
+7. [Github](https://github.com/)
    - This project was stored on Github.
-10. [Gitpod](https://www.gitpod.io/)
+8. [Gitpod](https://www.gitpod.io/)
     - Gitpod was used to write the code used for this website.
-11. [Git](https://en.wikipedia.org/wiki/Git)
+9. [Git](https://en.wikipedia.org/wiki/Git)
     - The version control system used for this project was Git.
-12. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+10. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Chrome DevTools was used throughout the building of this website.
-13. [WebFormatter](https://webformatter.com/html) 
+11. [WebFormatter](https://webformatter.com/html) 
     - WebFormatter was used to format the html and css files.
-14. [Am I Responsive](http://ami.responsivedesign.is/) 
+12. [Am I Responsive](http://ami.responsivedesign.is/) 
     - Am I Responsive was used to see how the website looked on different devices.
-16. [Unsplash](https://unsplash.com/)
+13. [Unsplash](https://unsplash.com/)
     - Unsplash was used to get images to use for the website.
-18. [Emailjs](https://www.emailjs.com/)
+14. [Emailjs](https://www.emailjs.com/)
     - Emailjs was used so that the user can sign up for the newsletter.
-20. [JSHint](https://jshint.com/)
+25. [JSHint](https://jshint.com/)
     - JSHint was used to test the JavaScript code.
-21. [Python Tester](https://extendsclass.com/python-tester.html)
+26. [Python Tester](https://extendsclass.com/python-tester.html)
     - Used to test python code.
-22. [Heroku](https://id.heroku.com/login)
+27. [Heroku](https://id.heroku.com/login)
     - Heroku was used to deploy this website
 
 
@@ -618,9 +618,18 @@ AWS_SECRET_ACCESS_KEY
 - All images used on this website except the hero image on the home page were taken from 12 Acres current website and Facebook page with permission.
 - The hero image was found [here](https://unsplash.com/photos/2UsNF4Az-Ko?fbclid=IwAR1bL0CLNgzS0jWV3aOwWHUBx4u8LYRbQQW62LCW4alEi_RDbfhPCkgXUVE) on Unsplashed and was taken by Merritt Thomas.
 
-### Code 
+### Tutorials / Resources
+- [Django docs](https://docs.djangoproject.com/en/3.2/)
+- [Corey Schafer Django](https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p)
 
 
+### Student projects that viewed to get ideas
+- [Moose Juice](https://github.com/Edb83/moose-juice)
+- [Dargan Health Foods](https://github.com/nualagr/dargan-health-foods)
+- [The House of Mouse](https://github.com/AJGreaves/thehouseofmouse)
+
+### Code
+- The code for the star rating was modified from [Moose Juice](https://github.com/Edb83/moose-juice)
 
 ### Content
 
