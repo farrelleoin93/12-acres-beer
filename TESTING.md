@@ -402,7 +402,7 @@ Tested on:
 - Firefox
     - no issues
 - Safari (iOS)
-    - no-issues
+    - no issues
 
 ### Screen sizes
 
