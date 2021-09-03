@@ -385,6 +385,7 @@ The following tests have been carried out without issue:
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - 0 errors **PASS**
 - [JS Hint](https://jshint.com/) - 0 errors - **PASS**
 - [Python Tester](https://extendsclass.com/python-tester.html) - No syntax errors detected :) - **PASS**
+- [PEP8](http://pep8online.com/) No errors
 
 
 

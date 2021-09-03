@@ -334,6 +334,8 @@ Pages for 404 and 500 errors keep the user on the site when something goes wrong
     - JSHint was used to test the JavaScript code.
 - [Python Tester](https://extendsclass.com/python-tester.html)
     - Used to test python code.
+- [PEP8](http://pep8online.com/)
+    - Used to test python code.
 - [Heroku](https://id.heroku.com/login)
     - Heroku was used to deploy this website
 
@@ -634,6 +636,7 @@ AWS_SECRET_ACCESS_KEY
 ### Code
 - The code for the star rating was modified from [Moose Juice](https://github.com/Edb83/moose-juice)
 - Some code ideas and inspiration for the Find our beers Google maps section were found at [Experience Cornwall](https://github.com/Gregory4321/milestone-project-2) an [Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia)
+- A lot of the code for this site was taken and adapted from the Boutique Ado walkthrough project.
 
 ### Content
 
