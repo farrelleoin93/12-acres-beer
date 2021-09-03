@@ -306,6 +306,8 @@ The following tests have been carried out without issue:
 ## <a name="auto-testing">Automated Testing</a>
 [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Lighthouse audit summary for both desktop and mobile:
 
+#### "Background and foreground colors do not have a sufficient contrast ratio." - These warning appeared on each page due to the colours in the navbar and footer, however, I chose to ignore this as myself and the people that tested the site agreed that the colours worked well together and were easy to read.
+
 **Home page**
 
 - Performance: **95%**

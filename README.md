@@ -53,9 +53,9 @@ The following details should be used when trying to submit an order on the check
 | Unregistered user       | access contact details                                                  | get in touch with 12 Acres                                |
 | Unregistered user       | easily register an account                                      | use the site easier in the future                 |
 |          ---         |                                    ---                                   |                              ---                              |
-| Registered user      | log in and log out of my profile account                                | save/update my personal information         |
+| Registered user      | log in and log out of my profile account                                | so that my personal information will be safe         |
 | Registered user      | store my details for later use                                          | avoid having to fill in my details each time        |
-| Registered user      | update my details                                                        | update address and other details in case they change          |
+| Registered user      | update my details                                                        | update my address and other details in case they change          |
 | Registered user      | store my order history                                               | access my previous orders                         |
 | Registered user      | leave a review                                               | inform future users about the beer                         |
 | Registered user      | review my purchase at the checkout                                  | decide whether to add or edit the order before confirming     |
@@ -64,7 +64,7 @@ The following details should be used when trying to submit an order on the check
 |          ---         |                                    ---                                   |                              ---                              |
 | Site admin/superuser | add new beers to the website                                  | continuously make new beers available          |
 | Site admin/superuser | edit existing beers                                                  | update the website                                |
-| Site admin/superuser | delete existing beers                                        | delete beers 12 Acres do not make anymore                       |
+| Site admin/superuser | delete existing beers                                        | delete beers that 12 Acres do not make anymore                       |
 | Site admin/superuser | create blogs                                                            | inform users about any developments at the company                          |
 | Site admin/superuser | update blog entries                                                     | update users on any developments at the company                      |
 | Site admin/superuser | delete blog entries                                                     | remove blog details           |
@@ -81,11 +81,11 @@ The following details should be used when trying to submit an order on the check
 - The user should be able to clearly navigate through the website even on their first visit.
 - The user should be able to read about each beer so that they can decide what beers are right for them.
 - The user should be able search for a specific beer or filter the beer by a category.
-- The user should be able to to find out informatiion about the comany via blog posts.
+- The user should be able to to find out information about the company via blog posts.
 - The user should be able to register for the website.
 - The user should be able to buy beers easily and securely. 
 - The user should be able to leave reviews for the beers. 
-- The user should be able to safe their details to their profile and should also have the ability to edit them.
+- The user should be able to save their details to their profile and should also have the ability to edit them.
 - The user should be able to contact the owners of the company.
 
 
@@ -99,8 +99,8 @@ The following details should be used when trying to submit an order on the check
 
 ### Colours
 - I decided to use orange (#f9931e) for the navbar, footer and throughout the website, I chose this colour as I felt that it worked well the colour of the beer in the hero image.
-- For most of the buttons on this s ite i used both bootstraps border-dark class and also a custom border-orange which uses the same orange (#f9931e) that is used throughout the site.
-- The background of the website is also white.
+- For most of the buttons on this site I used both Bootstraps border-dark class and also a custom border-orange which uses the same orange (#f9931e) that is used throughout the site.
+- The main background of the website is white.
 - Any text that is on the orange background is white as I felt they worked well together.
 - I chose black test to be used on any white background .
 
@@ -129,16 +129,16 @@ The wireframes for this website can be found [here](wireframes/)
  - I decided to change the background colour of the second nav bar underneath the main navbar to the orange that is use throughout the site (#f9931e) and I also added in icons to accompany the words to make it more visually appealing to the user.
 
 #### Footer
- - I decided to remove the navigation links in the footer with information about 12 Acres. This decision was made as I feel it is more in line with commun UI pratices, also as the user has navigation links the navbar I felt that it was not necessary to also have them in the footer.
+ - I decided to remove the navigation links in the footer with information about 12 Acres. This decision was made as I feel it is more in line with commun UI pratices, also there are navigation links in the navbar I felt that it was not necessary to also have them in the footer.
  - The newsletter subscription form was moved to the left hand side of the footer on tablet and desktop and to the top of the footer on mobile devices, this was due to feedback that I recieved from testers of this site.
- - I also added a horizontal line between the company information and newsletter section and the social media links section on desktop and tablet devices and on mobile devices a horizontal line was added between each section of the footer. This was done as the footer was looking quite crowded.
+ - I also added a horizontal line between the company information and newsletter sections and the social media links section on desktop and tablet devices and on mobile devices a horizontal line was added between each section of the footer. This was done as the footer was looking quite crowded.
 
 #### Other
  - The placeholders in each form field with the exception of the checkout, sign in and sign up pages were replaced with titles just above each field.
 
 **Beers page**
- - I added buttons at the top of the page so that the use can filter the results by the type of beer that they are searching for.
- - I added box a shadow around each beer so that each beer card is clearly defined.
+ - I added buttons at the top of the page so that the user can filter the results by the type of beer that they are searching for.
+ - I added box a shadow around each beer so that each beer is clearly defined.
 
 **Checkout page**
  - On tablet devices the order summary section is placed in top of the user details section instead of beside it.
@@ -146,7 +146,7 @@ The wireframes for this website can be found [here](wireframes/)
 
 **Find our beers page**
  - The heading is aligned left instead of center
- - On mobile view the buttons are positioned on topo of eachother rather than side by side. 
+ - On mobile view the buttons are positioned on top of eachother rather than side by side. 
 
 **Add/edit a blog page**
  - A slug field was added to the page.
@@ -164,7 +164,7 @@ This site has been designed and made with all users in mind and thus is visually
 
 **Navbar**
 
-The navbar is consistant on all pages throughout the website and adheres to common practices which users have come to expect from navbars, for example a dropdown appears on smaller devices. 
+The navbar is consistant on all pages throughout the website and adheres to common practices which users have come to expect from navbars, for example a dropdown burger menu appears on smaller devices. 
 
 **Search bar**
 
@@ -182,14 +182,14 @@ The footer contains information about 12 Acres such as their phone number and ad
 
 **Home**
 
-- The home page has a visually appealing hero image of pints of beer, this gives the user a strong hint as to what kind of website they have visited. It also has a welcoming message and a button that links the user to the beers page.
+- The home page has a visually appealing hero image of pints of beer, this gives the user a strong hint as to what kind of website they have visited. It also has a welcoming message and a "Shop" button that links the user to the beers page.
 - The user can also find out a bit more about 12 Acres directly underneath the hero image by reading about how the beer is made and also by viewing images of the employees of 12 Acres.
 
 **Beers**
 
 - By default all beers are displayed on the beers page.
-- The user can filter the beers by types of beer (ale, lager etc) by using the buttons at the top of the page.
-- information about each beer is displayed in the form of cards. This information consists of an image, name, price and average rating.
+- The user can filter the beers by types of beer (ale, lager and stout) by using the buttons at the top of the page.
+- Information about each beer is displayed in the form of cards. This information consists of an image, name, price and average rating.
 
 **Beer details**
 
